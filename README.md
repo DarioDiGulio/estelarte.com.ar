@@ -1,2 +1,2 @@
-# estelarte.com.ar
-Landing page para Estelarte, París, QR
+Landing page para Estelarte bilingüe, una galería de arte.
+https://estelarte.com.ar/
