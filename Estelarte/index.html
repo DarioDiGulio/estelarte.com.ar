@@ -14,109 +14,436 @@
     <meta property="og:image" itemprop="image" content="imagenes/estelarte_logo_sin_fondo.png">
     <meta property="og:type" content="website" />
     <meta property="og:updated_time" content="1440432930" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/css/uikit.min.css" />
     <title>Taller Estelarte</title>
+    <script src="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/js/uikit.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/js/uikit-icons.min.js"></script>
+    <script src="index.js"></script>
 </head>
 
 <body>
-    <div id="idiomas">
-        <p id="español"><a href="index.html">Español|</a></p>
-        <p id="ingles"><a href="ingles.html">|English</a></p>
-    </div>
+    <nav class="uk-navbar-container" uk-navbar>
 
-    <div id="redes">
-        <a
-            href="https://api.whatsapp.com/send?phone=541158451062&amp;text=Hola! Quiero hacerte una consulta sobre tus cuadros.">
-            <img alt="WP" class="img-redes" src="imagenes/watsapp.png" />
-        </a>
-        <a href="https://facebook.com/tallerestelarte/">
-            <img alt="FC" class="img-redes" src="imagenes/facebook.png" />
-        </a>
-        <a href="https://www.instagram.com/tallerestelarte/">
-            <img alt="IG" class="img-redes" src="imagenes/instagram.png" />
-        </a>
-    </div>
+        <div class="uk-navbar-left">
+
+            <div class="uk-inline">
+                <a class="uk-navbar-toggle" href="#">
+                    <span uk-navbar-toggle-icon></span> <span class="uk-margin-small-left">Galería</span>
+                </a>
+
+                <div uk-dropdown="mode: click">
+                    <ul class="uk-nav uk-dropdown-nav">
+                        <li><a href="#hiperrealismo">Hiperrealismo</a></li>
+                        <li><a href="#escencialismo">Escencialismo</a></li>
+                        <li><a href="#arte_figurativo">Arte Figurativo</a></li>
+                        <li><a href="#abstract">Abstracto</a></li>
+                        <li><a href="#pasteles">Pasteles</a></li>
+                        <li><a href="#expos">Actividades y exposiciones</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <!-- 
+        <div class="uk-navbar-center">
+
+            <ul class="uk-iconnav uk-margin-top">
+                <li>
+                    <p id="español"><a href="index.html">Español</a></p>
+                </li>
+                <li>
+                    <p id="ingles"><a href="ingles.html">English</a></p>
+                </li>
+            </ul>
+
+        </div> -->
+
+        <div class="uk-navbar-right">
+
+            <ul class="uk-iconnav uk-margin">
+                <li>
+                    <a target="_"
+                        href="https://api.whatsapp.com/send?phone=541158451062&amp;text=Hola! Quiero hacerte una consulta sobre tus cuadros.">
+                        <img class="img-redes" src="imagenes/watsapp.png" />
+                    </a>
+                </li>
+                <li>
+                    <a target="_" href="https://facebook.com/tallerestelarte/">
+                        <img class="img-redes" src="imagenes/facebook.png" />
+                    </a>
+                </li>
+                <li>
+                    <a target="_" href="https://www.instagram.com/tallerestelarte/">
+                        <img class="img-redes" src="imagenes/instagram.png" />
+                    </a>
+                </li>
+            </ul>
+
+        </div>
+
+    </nav>
 
     <div id="logo">
         <img src="imagenes/estelarte logo sin fondo.png" />
     </div>
 
     <aside>
-        <p>El mágico momento de estar frente a un <b>lienzo blanco</b> y ser al mismo tiempo</p>
-        <p>protagonista y espectadora de la maravillosa transformación de la obra que empieza a vivir desde las
-            <b>pinceladas,</b></p>
-        <p>tomando de mi el patrimonio más sensible, para mostrarlo a quien quiera ver <b>mis emociones pintadas.</b>
+        <p class="uk-text-muted uk-text-large">El mágico momento de estar frente a un <b>lienzo blanco</b> y ser al mismo tiempo protagonista y espectadora
+            de la maravillosa transformación de la obra que empieza a vivir desde las
+            <b>pinceladas,</b> tomando de mi el patrimonio más sensible, para mostrarlo a quien quiera ver <b>mis
+                emociones pintadas.</b>
         </p>
     </aside>
 
     <section>
         <p><b>Galería</b></p>
         <section id="galeria">
-            <article class="imagenes">
-                <img class="imagen" src="imagenes/abuelo.jpg" alt="">
-            </article>
-            <article class="imagenes">
-                <img class="imagen" src="imagenes/louis.jpg" alt="">
-            </article>
-            <article class="imagenes">
-                <img class="imagen" src="imagenes/mujer.jpg" alt="">
-            </article>
-            <article class="imagenes">
-                <img class="imagen" src="imagenes/renacer.jpg" alt="">
-            </article>
-            <article class="imagenes">
-                <img class="imagen" src="imagenes/madre.jpg" alt="">
-            </article>
-            <article class="imagenes">
-                <img class="imagen" src="imagenes/águila.jpg" alt="">
-            </article>
-            <article class="imagenes">
-                <img class="imagen" src="imagenes/bandera.jpg" alt="">
-            </article>
-            <article class="imagenes">
-                <img class="imagen" src="imagenes/soñar.jpg" alt="">
-            </article>
-            <article class="imagenes">
-                <img class="imagen" src="imagenes/bhuo.jpg" alt="">
-            </article>
-            <article class="imagenes">
-                <img class="imagen" src="imagenes/abstract1.jpg" alt="">
-            </article>
-            <article class="imagenes">
-                <img class="imagen" src="imagenes/tango.jpg" alt="">
-            </article>
-            <article class="imagenes">
-                <img class="imagen" src="imagenes/cara.jpg" alt="">
-            </article>
-            <article class="imagenes">
-                <img class="imagen" src="imagenes/elefante.jpg" alt="">
-            </article>
-            <article class="imagenes">
-                <img class="imagen" src="imagenes/abstract2.jpg" alt="">
-            </article>
-            <article class="imagenes">
-                <img class="imagen" src="imagenes/tigre.jpg" alt="">
-            </article>
-            <article class="imagenes">
-                <img class="imagen" src="imagenes/guitarra.jpg" alt="">
-            </article>
-            <article class="imagenes">
-                <img class="imagen" src="imagenes/abstract3.jpg" alt="">
-            </article>
-            <article class="imagenes">
-                <img class="imagen" src="imagenes/louvre.jpg" alt="">
-            </article>
-            <article class="imagenes">
-                <img class="imagen" src="imagenes/estela.jpg" alt="">
-            </article>
+
+            <h2 id="hiperrealismo">Hiperrealismo</h2>
+            <div class="uk-position-relative uk-visible-toggle uk-light" tabindex="-1" uk-slideshow="animation: push">
+
+                <ul class="uk-slideshow-items">
+                    <li>
+                        <div class="uk-position-cover uk-animation-kenburns">
+                            <img src="imagenes/viejo.png" alt="" uk-cover>
+                            <a class="uk-position-absolute uk-transform-center" style="left: 50%; top: 50%"
+                                href="#modal_viejo" uk-marker uk-tooltip="ver más" uk-toggle
+                                onclick="cargarModal('viejo')"></a>
+
+                        </div>
+                    </li>
+                    <li>
+                        <div class="uk-position-cover uk-animation-kenburns">
+                            <img src="imagenes/bandera.png" alt="" uk-cover>
+                            <a class="uk-position-absolute uk-transform-center" style="left: 50%; top: 50%"
+                                href="#modal_viejo" uk-marker uk-tooltip="ver más" uk-toggle
+                                onclick="cargarModal('bandera')"></a>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="uk-position-cover uk-animation-kenburns">
+                            <img src="imagenes/anju.png" alt="" uk-cover>
+                            <a class="uk-position-absolute uk-transform-center" style="left: 50%; top: 50%"
+                                href="#modal_viejo" uk-marker uk-tooltip="ver más" uk-toggle
+                                onclick="cargarModal('anju')"></a>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="uk-position-cover uk-animation-kenburns">
+                            <img src="imagenes/elefante.png" alt="" uk-cover>
+                            <a class="uk-position-absolute uk-transform-center" style="left: 50%; top: 50%"
+                                href="#modal_viejo" uk-marker uk-tooltip="ver más" uk-toggle
+                                onclick="cargarModal('elefante')"></a>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="uk-position-cover uk-animation-kenburns">
+                            <img src="imagenes/aguila.png" alt="" uk-cover>
+                            <a class="uk-position-absolute uk-transform-center" style="left: 50%; top: 50%"
+                                href="#modal_viejo" uk-marker uk-tooltip="ver más" uk-toggle
+                                onclick="cargarModal('aguila')"></a>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="uk-position-cover uk-animation-kenburns">
+                            <img src="imagenes/refugio.png" alt="" uk-cover>
+                            <a class="uk-position-absolute uk-transform-center" style="left: 50%; top: 50%"
+                                href="#modal_viejo" uk-marker uk-tooltip="ver más" uk-toggle
+                                onclick="cargarModal('refugio')"></a>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="uk-position-cover uk-animation-kenburns">
+                            <img src="imagenes/buho.png" alt="" uk-cover>
+                            <a class="uk-position-absolute uk-transform-center" style="left: 50%; top: 50%"
+                                href="#modal_viejo" uk-marker uk-tooltip="ver más" uk-toggle
+                                onclick="cargarModal('buho')"></a>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="uk-position-cover uk-animation-kenburns">
+                            <img src="imagenes/paisaje.png" alt="" uk-cover>
+                            <a class="uk-position-absolute uk-transform-center" style="left: 50%; top: 50%"
+                                href="#modal_viejo" uk-marker uk-tooltip="ver más" uk-toggle
+                                onclick="cargarModal('paisaje')"></a>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="uk-position-cover uk-animation-kenburns">
+                            <img src="imagenes/calas.png" alt="" uk-cover>
+                            <a class="uk-position-absolute uk-transform-center" style="left: 50%; top: 50%"
+                                href="#modal_viejo" uk-marker uk-tooltip="ver más" uk-toggle
+                                onclick="cargarModal('calas')"></a>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="uk-position-cover uk-animation-kenburns">
+                            <img src="imagenes/avenida.png" alt="" uk-cover>
+                            <a class="uk-position-absolute uk-transform-center" style="left: 50%; top: 50%"
+                                href="#modal_viejo" uk-marker uk-tooltip="ver más" uk-toggle
+                                onclick="cargarModal('avenida')"></a>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="uk-position-cover uk-animation-kenburns">
+                            <img src="imagenes/uruguay.png" alt="" uk-cover>
+                            <a class="uk-position-absolute uk-transform-center" style="left: 50%; top: 50%"
+                                href="#modal_viejo" uk-marker uk-tooltip="ver más" uk-toggle
+                                onclick="cargarModal('uruguay')"></a>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="uk-position-cover uk-animation-kenburns">
+                            <img src="imagenes/caballo.png" alt="" uk-cover>
+                            <a class="uk-position-absolute uk-transform-center" style="left: 50%; top: 50%"
+                                href="#modal_viejo" uk-marker uk-tooltip="ver más" uk-toggle
+                                onclick="cargarModal('caballo')"></a>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="uk-position-cover uk-animation-kenburns">
+                            <img src="imagenes/louis.png" alt="" uk-cover>
+                            <a class="uk-position-absolute uk-transform-center" style="left: 50%; top: 50%"
+                                href="#modal_viejo" uk-marker uk-tooltip="ver más" uk-toggle
+                                onclick="cargarModal('louis')"></a>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="uk-position-cover uk-animation-kenburns">
+                            <img src="imagenes/madre.png" alt="" uk-cover>
+                            <a class="uk-position-absolute uk-transform-center" style="left: 50%; top: 50%"
+                                href="#modal_viejo" uk-marker uk-tooltip="ver más" uk-toggle
+                                onclick="cargarModal('madre')"></a>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="uk-position-cover uk-animation-kenburns">
+                            <img src="imagenes/tigre.png" alt="" uk-cover>
+                            <a class="uk-position-absolute uk-transform-center" style="left: 50%; top: 50%"
+                                href="#modal_viejo" uk-marker uk-tooltip="ver más" uk-toggle
+                                onclick="cargarModal('tigre')"></a>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="uk-position-cover uk-animation-kenburns">
+                            <img src="imagenes/tango.png" alt="" uk-cover>
+                            <a class="uk-position-absolute uk-transform-center" style="left: 50%; top: 50%"
+                                href="#modal_viejo" uk-marker uk-tooltip="ver más" uk-toggle
+                                onclick="cargarModal('tango')"></a>
+                        </div>
+                    </li>
+                </ul>
+
+                <a class="uk-position-center-left uk-position-small uk-hidden-hover" href="#" uk-slidenav-previous
+                    uk-slideshow-item="previous"></a>
+                <a class="uk-position-center-right uk-position-small uk-hidden-hover" uk-slidenav-next
+                    uk-slideshow-item="next"></a>
+            </div>
+
+            <h2 id="escencialismo">Escencialismo</h2>
+            <div class="uk-position-relative uk-visible-toggle uk-light" tabindex="-1" uk-slideshow="animation: push">
+
+                <ul class="uk-slideshow-items">
+                    <li>
+                        <div class="uk-position-cover uk-animation-kenburns">
+                            <img src="imagenes/paris.jpg" alt="" uk-cover>
+                            <a class="uk-position-absolute uk-transform-center" style="left: 50%; top: 50%"
+                                href="#modal_viejo" uk-marker uk-tooltip="ver más" uk-toggle
+                                onclick="cargarModal('paris')"></a>
+
+                        </div>
+                    </li>
+                </ul>
+
+                <a class="uk-position-center-left uk-position-small uk-hidden-hover" href="#" uk-slidenav-previous
+                    uk-slideshow-item="previous"></a>
+                <a class="uk-position-center-right uk-position-small uk-hidden-hover" uk-slidenav-next
+                    uk-slideshow-item="next"></a>
+            </div>
+
+            <h2 id="arte_figurativo">Arte Figurativo</h2>
+            <div class="uk-position-relative uk-visible-toggle uk-light" tabindex="-1" uk-slideshow="animation: push">
+
+                <ul class="uk-slideshow-items">
+                    <li>
+                        <div class="uk-position-cover uk-animation-kenburns">
+                            <img src="imagenes/estela.jpg" alt="" uk-cover>
+                            <a class="uk-position-absolute uk-transform-center" style="left: 50%; top: 50%"
+                                href="#modal_viejo" uk-marker uk-tooltip="ver más" uk-toggle
+                                onclick="cargarModal('estela')"></a>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="uk-position-cover uk-animation-kenburns">
+                            <img src="imagenes/marianela.jpg" alt="" uk-cover>
+                            <a class="uk-position-absolute uk-transform-center" style="left: 50%; top: 50%"
+                                href="#modal_viejo" uk-marker uk-tooltip="ver más" uk-toggle
+                                onclick="cargarModal('mane')"></a>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="uk-position-cover uk-animation-kenburns">
+                            <img src="imagenes/renacer.png" alt="" uk-cover>
+                            <a class="uk-position-absolute uk-transform-center" style="left: 50%; top: 50%"
+                                href="#modal_viejo" uk-marker uk-tooltip="ver más" uk-toggle
+                                onclick="cargarModal('renacer')"></a>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="uk-position-cover uk-animation-kenburns">
+                            <img src="imagenes/jazz.jpg" alt="" uk-cover>
+                            <a class="uk-position-absolute uk-transform-center" style="left: 50%; top: 50%"
+                                href="#modal_viejo" uk-marker uk-tooltip="ver más" uk-toggle
+                                onclick="cargarModal('jazz')"></a>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="uk-position-cover uk-animation-kenburns">
+                            <img src="imagenes/patines.jpg" alt="" uk-cover>
+                            <a class="uk-position-absolute uk-transform-center" style="left: 50%; top: 50%"
+                                href="#modal_viejo" uk-marker uk-tooltip="ver más" uk-toggle
+                                onclick="cargarModal('patines')"></a>
+                        </div>
+                    </li>
+                </ul>
+
+                <a class="uk-position-center-left uk-position-small uk-hidden-hover" href="#" uk-slidenav-previous
+                    uk-slideshow-item="previous"></a>
+                <a class="uk-position-center-right uk-position-small uk-hidden-hover" uk-slidenav-next
+                    uk-slideshow-item="next"></a>
+            </div>
+
+            <h2 id="abstract">Abstracto</h2>
+            <div class="uk-position-relative uk-visible-toggle uk-light" tabindex="-1" uk-slideshow="animation: push">
+
+                <ul class="uk-slideshow-items">
+                    <li>
+                        <div class="uk-position-cover uk-animation-kenburns">
+                            <img src="imagenes/abstract1.png" alt="" uk-cover>
+                            <a class="uk-position-absolute uk-transform-center" style="left: 50%; top: 50%"
+                                href="#modal_viejo" uk-marker uk-tooltip="ver más" uk-toggle
+                                onclick="cargarModal('abstract1')"></a>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="uk-position-cover uk-animation-kenburns">
+                            <img src="imagenes/crisol.png" alt="" uk-cover>
+                            <a class="uk-position-absolute uk-transform-center" style="left: 50%; top: 50%"
+                                href="#modal_viejo" uk-marker uk-tooltip="ver más" uk-toggle
+                                onclick="cargarModal('crisol')"></a>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="uk-position-cover uk-animation-kenburns">
+                            <img src="imagenes/abstract2.png" alt="" uk-cover>
+                            <a class="uk-position-absolute uk-transform-center" style="left: 50%; top: 50%"
+                                href="#modal_viejo" uk-marker uk-tooltip="ver más" uk-toggle
+                                onclick="cargarModal('paleta')"></a>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="uk-position-cover uk-animation-kenburns">
+                            <img src="imagenes/abstract3.png" alt="" uk-cover>
+                            <a class="uk-position-absolute uk-transform-center" style="left: 50%; top: 50%"
+                                href="#modal_viejo" uk-marker uk-tooltip="ver más" uk-toggle
+                                onclick="cargarModal('abstract3')"></a>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="uk-position-cover uk-animation-kenburns">
+                            <img src="imagenes/infinito.jpg" alt="" uk-cover>
+                            <a class="uk-position-absolute uk-transform-center" style="left: 50%; top: 50%"
+                                href="#modal_viejo" uk-marker uk-tooltip="ver más" uk-toggle
+                                onclick="cargarModal('infinito')"></a>
+                        </div>
+                    </li>
+                </ul>
+
+                <a class="uk-position-center-left uk-position-small uk-hidden-hover" href="#" uk-slidenav-previous
+                    uk-slideshow-item="previous"></a>
+                <a class="uk-position-center-right uk-position-small uk-hidden-hover" uk-slidenav-next
+                    uk-slideshow-item="next"></a>
+            </div>
+
+            <h2 id="pasteles">Pasteles</h2>
+            <div class="uk-position-relative uk-visible-toggle uk-light" tabindex="-1" uk-slideshow="animation: push">
+
+                <ul class="uk-slideshow-items">
+                    <li>
+                        <div class="uk-position-cover uk-animation-kenburns">
+                            <img src="imagenes/pasteles1.png" alt="" uk-cover>
+                            <a class="uk-position-absolute uk-transform-center" style="left: 50%; top: 50%"
+                                href="#modal_viejo" uk-marker uk-tooltip="ver más" uk-toggle
+                                onclick="cargarModal('pasteles1')"></a>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="uk-position-cover uk-animation-kenburns">
+                            <img src="imagenes/pasteles2.png" alt="" uk-cover>
+                            <a class="uk-position-absolute uk-transform-center" style="left: 50%; top: 50%"
+                                href="#modal_viejo" uk-marker uk-tooltip="ver más" uk-toggle
+                                onclick="cargarModal('pasteles2')"></a>
+                        </div>
+                    </li>
+                </ul>
+
+                <a class="uk-position-center-left uk-position-small uk-hidden-hover" href="#" uk-slidenav-previous
+                    uk-slideshow-item="previous"></a>
+                <a class="uk-position-center-right uk-position-small uk-hidden-hover" uk-slidenav-next
+                    uk-slideshow-item="next"></a>
+            </div>
+
+            <h2 id="expos">Actividades y exposiciones</h2>
+            <div class="uk-position-relative uk-visible-toggle uk-light" tabindex="-1" uk-slideshow="animation: push">
+
+                <ul class="uk-slideshow-items">
+                    <li>
+                        <div class="uk-position-cover uk-animation-kenburns">
+                            <img src="imagenes/expo1.png" alt="" uk-cover>
+                            <a class="uk-position-absolute uk-transform-center" style="left: 50%; top: 50%"
+                                href="#modal_viejo" uk-marker uk-tooltip="ver más" uk-toggle
+                                onclick="cargarModal('expo1')"></a>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="uk-position-cover uk-animation-kenburns">
+                            <img src="imagenes/expo2.png" alt="" uk-cover>
+                            <a class="uk-position-absolute uk-transform-center" style="left: 50%; top: 50%"
+                                href="#modal_viejo" uk-marker uk-tooltip="ver más" uk-toggle
+                                onclick="cargarModal('expo2')"></a>
+                        </div>
+                    </li>
+                </ul>
+
+                <a class="uk-position-center-left uk-position-small uk-hidden-hover" href="#" uk-slidenav-previous
+                    uk-slideshow-item="previous"></a>
+                <a class="uk-position-center-right uk-position-small uk-hidden-hover" uk-slidenav-next
+                    uk-slideshow-item="next"></a>
+            </div>
+
         </section>
     </section>
 
+    <div id="modal_viejo" class="uk-modal-full" uk-modal>
+        <div class="uk-modal-dialog">
+            <button class="uk-modal-close-default" type="button" uk-close></button>
+            <div class="uk-grid-collapse uk-child-width-1-2@s uk-flex-middle" uk-grid>
+                <div id="image_modal" class="uk-background-cover" uk-height-viewport></div>
+                <div class="uk-padding-large">
+                    <h1 id="title_modal"></h1>
+                    <p id="description_modal"></p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <a href="#" uk-totop uk-scroll></a>
     <footer>
-        <p>Creado por</p>
-        <a href="https://mail.google.com/mail/?view=cm&amp;fs=1&amp;to=upwardsd@gmail.com">
-            <img alt="Upward" id="upward" src="imagenes/logo upward.png" />
-        </a>
-        <p>Upward</p>
+        <p>
+            Creado por
+            <a href="https://mail.google.com/mail/?view=cm&amp;fs=1&amp;to=upwardsd@gmail.com" target="_">
+                <img alt="Upward" id="upward" src="imagenes/logo upward.png" />
+            </a>
+            Upward
+        </p>
     </footer>
 </body>
 

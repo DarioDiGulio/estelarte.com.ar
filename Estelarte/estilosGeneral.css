@@ -10,20 +10,11 @@
 /* Generales */
 
 *{margin: 0;}
-a{text-decoration: none;color: #c2b58f}
-a:before{color: #c2b58f}
-a:visited{color: #c2b58f}
+a{text-decoration: none;color: #c2b58f !important}
+a:before{color: #c2b58f !important}
+a:visited{color: #c2b58f !important}
 
 /* Encabezado */
-
-#idiomas{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    margin-top: 1.5%;
-}
-
-#español{justify-self: end;}
-#ingles{justify-self: start;}
 
 #redes{text-align: right;margin-right: 5%;}
 #logo{text-align: center;}
@@ -38,7 +29,7 @@ hr{height: 3vh;color: #c2b58f;margin-left: 0.5%;margin-right: 0.5%;}
 /* Aside */ 
 
 aside{text-align: center;margin: 5%; font-family: 'CANDARA'; margin-bottom: 15%;}
-aside p {color: #c2b58f;font-size: 1rem;}
+aside p {color: #c2b58f !important;font-size: 1rem;}
 
 /* Galería */
 
@@ -52,7 +43,6 @@ section p{
 }
 
 section{text-align: center}
-.imagen{height: 90%;width: 90%;margin: 1%; margin-bottom: 3%;}
 
 /* Pie de página */
 
@@ -60,7 +50,6 @@ footer{
     display: flex;
     justify-content: center;
     background-color: #e7e7e8;
-    width: 100vw;
     margin-top: 5%;
 }
 
@@ -69,7 +58,6 @@ footer p{
     font-weight: bold;
     font-size: 0.9rem;
     color: #c2b58f;
-    margin-top: auto;
     margin-bottom: auto
 }
 
