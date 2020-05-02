@@ -5,7 +5,7 @@ deployment:
     - /bin/cp -R imagenes $DEPLOYPATH
     - /bin/cp -R CANDARA $DEPLOYPATH
     - /bin/cp -R Tipografías $DEPLOYPATH
-    - /bin/cp -R index.html $DEPLOYPATH
-    - /bin/cp -R comportamiendoIndex.js $DEPLOYPATH
-    - /bin/cp -R ingles.html $DEPLOYPATH
-    - /bin/cp -R estilosGeneral.css $DEPLOYPATH
+    - /bin/cp index.html $DEPLOYPATH
+    - /bin/cp comportamiendoIndex.js $DEPLOYPATH
+    - /bin/cp ingles.html $DEPLOYPATH
+    - /bin/cp estilosGeneral.css $DEPLOYPATH
