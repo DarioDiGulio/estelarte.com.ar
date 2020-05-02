@@ -2,10 +2,10 @@
 deployment:
   tasks:
     - export DEPLOYPATH=/home2/estela5839/public_html
+    - /bin/cp comportamiendoIndex.js $DEPLOYPATH
+    - /bin/cp ingles.html $DEPLOYPATH
+    - /bin/cp estilosGeneral.css $DEPLOYPATH
     - /bin/cp -R imagenes $DEPLOYPATH
     - /bin/cp -R CANDARA $DEPLOYPATH
     - /bin/cp -R Tipografías $DEPLOYPATH
     - /bin/cp index.html $DEPLOYPATH
-    - /bin/cp comportamiendoIndex.js $DEPLOYPATH
-    - /bin/cp ingles.html $DEPLOYPATH
-    - /bin/cp estilosGeneral.css $DEPLOYPATH
