@@ -1,0 +1,205 @@
+{
+    "cuadros": {
+        "hiperrealismo": {
+            "viejo": {
+                "id": "viejo",
+                "url": "url('imagenes/viejo.png')",
+                "title": "Don José",
+                "description": "La vejez empieza cuando perdemos la curiosidad."
+            },
+            "bandera": {
+                "id": "bandera",
+                "url": "url('imagenes/bandera.png')",
+                "title": "Argentina",
+                "description": "Cielo, azul y cielo."
+            },
+            "elefante": {
+                "id": "elefante",
+                "url": "url('imagenes/elefante.png')",
+                "title": "Tembo",
+                "description": "Mi segunda obra año 2005."
+            },
+            "tango": {
+                "id": "tango",
+                "url": "url('imagenes/tango.png')",
+                "title": "Caminito",
+                "description": "Obra donada."
+            },
+            "buho": {
+                "id": "buho",
+                "url": "url('imagenes/buho.png')",
+                "title": "Al asecho",
+                "description": "Espera calma y sigilosa."
+            },
+            "aguila": {
+                "id": "aguila",
+                "url": "url('imagenes/aguila.png')",
+                "title": "El Vuelo",
+                "description": "Porque ir andando, si puedes volar. Vuela hasta volvernos a encontrar."
+            },
+            "paisaje": {
+                "id": "paisaje",
+                "url": "url('imagenes/paisaje.png')",
+                "title": "Desde el faro",
+                "description": "Cuanto más te miro más te creo."
+            },
+            "avenida": {
+                "id": "avenida",
+                "url": "url('imagenes/avenida.png')",
+                "title": "Buenos Aires",
+                "description": "Las luces de mi ciudad, esperan siempre allí."
+            },
+            "uruguay": {
+                "id": "uruguay",
+                "url": "url('imagenes/uruguay.png')",
+                "title": "Silencio",
+                "description": "Historias de pinceles. Viajando por las playas de Uruguay el paisaje me encontró, y entonces se lo conté al lienzo que esperaba teñirse de color."
+            },
+            "madre": {
+                "id": "madre",
+                "url": "url('imagenes/madre.png')",
+                "title": "Desde el Alma",
+                "description": "No hay cielo tan puro como tu voz, no hay mar tan profundo como tu mirada y no hay sabio tan sabio que me enseñe lo que has venido a enseñarme tu hijo mío. Gracias a D.DG."
+            },
+            "caballo": {
+                "id": "caballo",
+                "url": "url('imagenes/caballo.png')",
+                "title": "Lucero",
+                "description": "Aunque el frio queme, aunque el miedo muerda, aunque el sol se esconda."
+            },
+            "louis": {
+                "id": "louis",
+                "url": "url('imagenes/louis.png')",
+                "title": "Mundo maravilloso",
+                "description": "Veo cielos de color azul, y nubes de color blanco. El brillante bendecido día, la oscura sagrada noche, y pienso para mí... qué mundo tan maravilloso."
+            },
+            "tigre": {
+                "id": "tigre",
+                "url": "url('imagenes/tigre.png')",
+                "title": "Miradas",
+                "description": "Historias de pinceles : Un día alguien me dijo: 'Me gustaría ver esta imagen pintada en grande para poderla contemplar día tras dia'. Así es como surgió Miradas."
+            }
+        },
+        "estela": {
+            "id": "estela",
+            "url": "url('imagenes/estela.jpg')",
+            "title": "Miradas",
+            "description": "Técnica: arte figurativo con acrilico. Medias: 50x80. Año: 2018"
+        },
+        "mane": {
+            "id": "mane",
+            "url": "url('imagenes/marianela.jpg')",
+            "title": "Marianela",
+            "description": "Obra expuesta en el Carrusel del Louvre año 2019"
+        },
+        "jazz": {
+            "id": "jazz",
+            "url": "url('imagenes/jazz.jpg')",
+            "title": "Jazz",
+            "description": "En homenaje a mis queridos amigos Julieta y Mario."
+        },
+        "patines": {
+            "id": "patines",
+            "url": "url('imagenes/patines.jpg')",
+            "title": "Soñando sobre ruedas",
+            "description": "tec acrilico sobre carton entelado medidas 45x60 año 2006"
+        },
+        "anju": {
+            "id": "anju",
+            "url": "url('imagenes/anju.png')",
+            "title": "Anju",
+            "description": "No busques con los ojos lo que puedes ver con el corazón."
+        },
+        "abstract1": {
+            "id": "abstract1",
+            "url": "url('imagenes/abstract1.png')",
+            "title": "Abstracto",
+            "description": "Abstracto con textura."
+        },
+        "crisol": {
+            "id": "crisol",
+            "url": "url('imagenes/crisol.png')",
+            "title": "Crisol",
+            "description": "Un lugar, un recuerdo en el tiempo."
+        },
+        "paleta": {
+            "id": "paleta",
+            "url": "url('imagenes/abstract2.png')",
+            "title": "Desde la pleta",
+            "description": "Técnica abstracto con acrilico medidas 80x80 año 2018"
+        },
+        "abstract3": {
+            "id": "abstract3",
+            "url": "url('imagenes/abstract3.png')",
+            "title": "Abstracto",
+            "description": "2019"
+        },
+        "infinito": {
+            "id": "infinito",
+            "url": "url('imagenes/infinito.jpg')",
+            "title": "Abstracto",
+            "description": "¿Sabías que en la cultura quechua el color azul representa el infinito? (araxa- pacha)."
+        },
+        "paris": {
+            "id": "paris",
+            "url": "url('imagenes/paris.jpg')",
+            "title": "París",
+            "description": "Del caos a la calma . Obra escencialista"
+        },
+        "renacer": {
+            "id": "renacer",
+            "url": "url('imagenes/renacer.png')",
+            "title": "Renacer",
+            "description": "tec arte figurat con acrilico medidas 60x60 año 2016"
+        },
+        "refugio": {
+            "id": "refugio",
+            "url": "url('imagenes/refugio.png')",
+            "title": "El refugio",
+            "description": "tec oleo con pincel seco en madera medidas 60x75 año 2005"
+        },
+        "pateles1": {
+            "id": "pasteles1",
+            "url": "url('imagenes/pasteles1.png')",
+            "title": "Ensueño I",
+            "description": "Serie de cuadros pintados con pasteles."
+        },
+        "pateles2": {
+            "id": "pasteles2",
+            "url": "url('imagenes/pasteles2.png')",
+            "title": "Ensueño II",
+            "description": "Serie de cuadros pintados con pasteles."
+        },
+        "expo1": {
+            "id": "expo1",
+            "url": "url('imagenes/expo1.png')",
+            "title": "Exposición en Buenos Aires",
+            "description": "2014"
+        },
+        "expo2": {
+            "id": "expo2",
+            "url": "url('imagenes/expo2.png')",
+            "title": "Exposición en París",
+            "description": "2019"
+        },
+        "calas": {
+            "id": "calas",
+            "url": "url('imagenes/calas.png')",
+            "title": "Calas",
+            "description": "No dejes que le de sed al árbol del que eres sol. FK."
+        }
+    },
+    "contacto": {
+        "facebook": {
+            "link": "https://facebook.com/tallerestelarte/"
+        },
+        "whatsapp": {
+            "link": "https://api.whatsapp.com/send?phone=NUMBER&amp;text=",
+            "message": "Hola! Quiero hacerte una consulta sobre tus cuadros.",
+            "number": "541158451062"
+        },
+        "instagram": {
+            "link": "https://www.instagram.com/tallerestelarte/"
+        }
+    }
+}

@@ -25,19 +25,19 @@
     <nav class="uk-navbar-container" uk-navbar>
 
         <div class="uk-navbar-left">
-            <div class="uk-inline">
+            <div class="uk-inline uk-margin-small-left">
                 <a class="uk-navbar-toggle" href="#">
                     <span uk-navbar-toggle-icon></span> <span class="uk-margin-small-left">Galería</span>
                 </a>
 
                 <div uk-dropdown="mode: click">
                     <ul class="uk-nav uk-dropdown-nav">
-                        <li><a href="#hiperrealismo">Hiperrealismo</a></li>
-                        <li><a href="#escencialismo">Escencialismo</a></li>
-                        <li><a href="#arte_figurativo">Arte Figurativo</a></li>
-                        <li><a href="#abstract">Abstracto</a></li>
-                        <li><a href="#pasteles">Pasteles</a></li>
-                        <li><a href="#expos">Actividades y exposiciones</a></li>
+                        <li class="item-menu"><a uk-scroll href="#hiperrealismo">Hiperrealismo</a></li>
+                        <li class="item-menu"><a uk-scroll href="#escencialismo">Escencialismo</a></li>
+                        <li class="item-menu"><a uk-scroll href="#arte_figurativo">Arte Figurativo</a></li>
+                        <li class="item-menu"><a uk-scroll href="#abstract">Abstracto</a></li>
+                        <li class="item-menu"><a uk-scroll href="#pasteles">Pasteles</a></li>
+                        <li class="item-menu"><a uk-scroll href="#expos">Actividades y exposiciones</a></li>
                     </ul>
                 </div>
             </div>
@@ -58,21 +58,21 @@
 
         <div class="uk-navbar-right">
 
-            <ul class="uk-iconnav uk-margin">
+            <ul class="uk-iconnav uk-margin uk-margin-small-right">
                 <li>
                     <a target="_"
                         href="https://api.whatsapp.com/send?phone=541158451062&amp;text=Hola! Quiero hacerte una consulta sobre tus cuadros.">
-                        <img class="img-redes" src="imagenes/watsapp.png" />
+                        <img loading="lazy" class="img-redes" src="imagenes/watsapp.png" />
                     </a>
                 </li>
                 <li>
                     <a target="_" href="https://facebook.com/tallerestelarte/">
-                        <img class="img-redes" src="imagenes/facebook.png" />
+                        <img loading="lazy" class="img-redes" src="imagenes/facebook.png" />
                     </a>
                 </li>
                 <li>
                     <a target="_" href="https://www.instagram.com/tallerestelarte/">
-                        <img class="img-redes" src="imagenes/instagram.png" />
+                        <img loading="lazy" class="img-redes" src="imagenes/instagram.png" />
                     </a>
                 </li>
             </ul>
@@ -82,7 +82,7 @@
     </nav>
 
     <div id="logo">
-        <img src="imagenes/estelarte logo sin fondo.png" />
+        <img loading="lazy" src="imagenes/estelarte logo sin fondo.png" />
     </div>
 
     <aside>
@@ -94,7 +94,6 @@
     </aside>
 
     <section>
-        <p><b>Galería</b></p>
         <section id="galeria">
 
             <h2 id="hiperrealismo">Hiperrealismo</h2>
@@ -103,130 +102,130 @@
                 <ul class="uk-slideshow-items">
                     <li>
                         <div class="uk-position-cover uk-animation-kenburns">
-                            <img src="imagenes/viejo.png" alt="" uk-cover>
+                            <img loading="lazy" src="imagenes/viejo.png" alt="Don José" uk-cover>
                             <a class="uk-position-absolute uk-transform-center" style="left: 50%; top: 50%"
-                                href="#modal_viejo" uk-marker uk-tooltip="ver más" uk-toggle
+                                href="#modal_full" uk-marker uk-tooltip="ver más" uk-toggle
                                 onclick="cargarModal('viejo')"></a>
 
                         </div>
                     </li>
                     <li>
                         <div class="uk-position-cover uk-animation-kenburns">
-                            <img src="imagenes/bandera.png" alt="" uk-cover>
+                            <img loading="lazy" src="imagenes/bandera.png" alt="Argentina" uk-cover>
                             <a class="uk-position-absolute uk-transform-center" style="left: 50%; top: 50%"
-                                href="#modal_viejo" uk-marker uk-tooltip="ver más" uk-toggle
+                                href="#modal_full" uk-marker uk-tooltip="ver más" uk-toggle
                                 onclick="cargarModal('bandera')"></a>
                         </div>
                     </li>
                     <li>
                         <div class="uk-position-cover uk-animation-kenburns">
-                            <img src="imagenes/anju.png" alt="" uk-cover>
+                            <img loading="lazy" src="imagenes/anju.png" alt="Anjú" uk-cover>
                             <a class="uk-position-absolute uk-transform-center" style="left: 50%; top: 50%"
-                                href="#modal_viejo" uk-marker uk-tooltip="ver más" uk-toggle
+                                href="#modal_full" uk-marker uk-tooltip="ver más" uk-toggle
                                 onclick="cargarModal('anju')"></a>
                         </div>
                     </li>
                     <li>
                         <div class="uk-position-cover uk-animation-kenburns">
-                            <img src="imagenes/elefante.png" alt="" uk-cover>
+                            <img loading="lazy" src="imagenes/elefante.png" alt="Tembo" uk-cover>
                             <a class="uk-position-absolute uk-transform-center" style="left: 50%; top: 50%"
-                                href="#modal_viejo" uk-marker uk-tooltip="ver más" uk-toggle
+                                href="#modal_full" uk-marker uk-tooltip="ver más" uk-toggle
                                 onclick="cargarModal('elefante')"></a>
                         </div>
                     </li>
                     <li>
                         <div class="uk-position-cover uk-animation-kenburns">
-                            <img src="imagenes/aguila.png" alt="" uk-cover>
+                            <img loading="lazy" src="imagenes/aguila.png" alt="El vuelo" uk-cover>
                             <a class="uk-position-absolute uk-transform-center" style="left: 50%; top: 50%"
-                                href="#modal_viejo" uk-marker uk-tooltip="ver más" uk-toggle
+                                href="#modal_full" uk-marker uk-tooltip="ver más" uk-toggle
                                 onclick="cargarModal('aguila')"></a>
                         </div>
                     </li>
                     <li>
                         <div class="uk-position-cover uk-animation-kenburns">
-                            <img src="imagenes/refugio.png" alt="" uk-cover>
+                            <img loading="lazy" src="imagenes/refugio.png" alt="Refugio" uk-cover>
                             <a class="uk-position-absolute uk-transform-center" style="left: 50%; top: 50%"
-                                href="#modal_viejo" uk-marker uk-tooltip="ver más" uk-toggle
+                                href="#modal_full" uk-marker uk-tooltip="ver más" uk-toggle
                                 onclick="cargarModal('refugio')"></a>
                         </div>
                     </li>
                     <li>
                         <div class="uk-position-cover uk-animation-kenburns">
-                            <img src="imagenes/buho.png" alt="" uk-cover>
+                            <img loading="lazy" src="imagenes/buho.png" alt="Al asecho" uk-cover>
                             <a class="uk-position-absolute uk-transform-center" style="left: 50%; top: 50%"
-                                href="#modal_viejo" uk-marker uk-tooltip="ver más" uk-toggle
+                                href="#modal_full" uk-marker uk-tooltip="ver más" uk-toggle
                                 onclick="cargarModal('buho')"></a>
                         </div>
                     </li>
                     <li>
                         <div class="uk-position-cover uk-animation-kenburns">
-                            <img src="imagenes/paisaje.png" alt="" uk-cover>
+                            <img loading="lazy" src="imagenes/paisaje.png" alt="Desde el faro" uk-cover>
                             <a class="uk-position-absolute uk-transform-center" style="left: 50%; top: 50%"
-                                href="#modal_viejo" uk-marker uk-tooltip="ver más" uk-toggle
+                                href="#modal_full" uk-marker uk-tooltip="ver más" uk-toggle
                                 onclick="cargarModal('paisaje')"></a>
                         </div>
                     </li>
                     <li>
                         <div class="uk-position-cover uk-animation-kenburns">
-                            <img src="imagenes/calas.png" alt="" uk-cover>
+                            <img loading="lazy" src="imagenes/calas.png" alt="Calas" uk-cover>
                             <a class="uk-position-absolute uk-transform-center" style="left: 50%; top: 50%"
-                                href="#modal_viejo" uk-marker uk-tooltip="ver más" uk-toggle
+                                href="#modal_full" uk-marker uk-tooltip="ver más" uk-toggle
                                 onclick="cargarModal('calas')"></a>
                         </div>
                     </li>
                     <li>
                         <div class="uk-position-cover uk-animation-kenburns">
-                            <img src="imagenes/avenida.png" alt="" uk-cover>
+                            <img loading="lazy" src="imagenes/avenida.png" alt="Buenos Aires" uk-cover>
                             <a class="uk-position-absolute uk-transform-center" style="left: 50%; top: 50%"
-                                href="#modal_viejo" uk-marker uk-tooltip="ver más" uk-toggle
+                                href="#modal_full" uk-marker uk-tooltip="ver más" uk-toggle
                                 onclick="cargarModal('avenida')"></a>
                         </div>
                     </li>
                     <li>
                         <div class="uk-position-cover uk-animation-kenburns">
-                            <img src="imagenes/uruguay.png" alt="" uk-cover>
+                            <img loading="lazy" src="imagenes/uruguay.png" alt="Silencio" uk-cover>
                             <a class="uk-position-absolute uk-transform-center" style="left: 50%; top: 50%"
-                                href="#modal_viejo" uk-marker uk-tooltip="ver más" uk-toggle
+                                href="#modal_full" uk-marker uk-tooltip="ver más" uk-toggle
                                 onclick="cargarModal('uruguay')"></a>
                         </div>
                     </li>
                     <li>
                         <div class="uk-position-cover uk-animation-kenburns">
-                            <img src="imagenes/caballo.png" alt="" uk-cover>
+                            <img loading="lazy" src="imagenes/caballo.png" alt="Lucero" uk-cover>
                             <a class="uk-position-absolute uk-transform-center" style="left: 50%; top: 50%"
-                                href="#modal_viejo" uk-marker uk-tooltip="ver más" uk-toggle
+                                href="#modal_full" uk-marker uk-tooltip="ver más" uk-toggle
                                 onclick="cargarModal('caballo')"></a>
                         </div>
                     </li>
                     <li>
                         <div class="uk-position-cover uk-animation-kenburns">
-                            <img src="imagenes/louis.png" alt="" uk-cover>
+                            <img loading="lazy" src="imagenes/louis.png" alt="" uk-cover>
                             <a class="uk-position-absolute uk-transform-center" style="left: 50%; top: 50%"
-                                href="#modal_viejo" uk-marker uk-tooltip="ver más" uk-toggle
+                                href="#modal_full" uk-marker uk-tooltip="ver más" uk-toggle
                                 onclick="cargarModal('louis')"></a>
                         </div>
                     </li>
                     <li>
                         <div class="uk-position-cover uk-animation-kenburns">
-                            <img src="imagenes/madre.png" alt="" uk-cover>
+                            <img loading="lazy" src="imagenes/madre.png" alt="" uk-cover>
                             <a class="uk-position-absolute uk-transform-center" style="left: 50%; top: 50%"
-                                href="#modal_viejo" uk-marker uk-tooltip="ver más" uk-toggle
+                                href="#modal_full" uk-marker uk-tooltip="ver más" uk-toggle
                                 onclick="cargarModal('madre')"></a>
                         </div>
                     </li>
                     <li>
                         <div class="uk-position-cover uk-animation-kenburns">
-                            <img src="imagenes/tigre.png" alt="" uk-cover>
+                            <img loading="lazy" src="imagenes/tigre.png" alt="" uk-cover>
                             <a class="uk-position-absolute uk-transform-center" style="left: 50%; top: 50%"
-                                href="#modal_viejo" uk-marker uk-tooltip="ver más" uk-toggle
+                                href="#modal_full" uk-marker uk-tooltip="ver más" uk-toggle
                                 onclick="cargarModal('tigre')"></a>
                         </div>
                     </li>
                     <li>
                         <div class="uk-position-cover uk-animation-kenburns">
-                            <img src="imagenes/tango.png" alt="" uk-cover>
+                            <img loading="lazy" src="imagenes/tango.png" alt="" uk-cover>
                             <a class="uk-position-absolute uk-transform-center" style="left: 50%; top: 50%"
-                                href="#modal_viejo" uk-marker uk-tooltip="ver más" uk-toggle
+                                href="#modal_full" uk-marker uk-tooltip="ver más" uk-toggle
                                 onclick="cargarModal('tango')"></a>
                         </div>
                     </li>
@@ -244,9 +243,9 @@
                 <ul class="uk-slideshow-items">
                     <li>
                         <div class="uk-position-cover uk-animation-kenburns">
-                            <img src="imagenes/paris.jpg" alt="" uk-cover>
+                            <img loading="lazy" src="imagenes/paris.jpg" alt="" uk-cover>
                             <a class="uk-position-absolute uk-transform-center" style="left: 50%; top: 50%"
-                                href="#modal_viejo" uk-marker uk-tooltip="ver más" uk-toggle
+                                href="#modal_full" uk-marker uk-tooltip="ver más" uk-toggle
                                 onclick="cargarModal('paris')"></a>
 
                         </div>
@@ -265,41 +264,41 @@
                 <ul class="uk-slideshow-items">
                     <li>
                         <div class="uk-position-cover uk-animation-kenburns">
-                            <img src="imagenes/estela.jpg" alt="" uk-cover>
+                            <img loading="lazy" src="imagenes/estela.jpg" alt="" uk-cover>
                             <a class="uk-position-absolute uk-transform-center" style="left: 50%; top: 50%"
-                                href="#modal_viejo" uk-marker uk-tooltip="ver más" uk-toggle
+                                href="#modal_full" uk-marker uk-tooltip="ver más" uk-toggle
                                 onclick="cargarModal('estela')"></a>
                         </div>
                     </li>
                     <li>
                         <div class="uk-position-cover uk-animation-kenburns">
-                            <img src="imagenes/marianela.jpg" alt="" uk-cover>
+                            <img loading="lazy" src="imagenes/marianela.jpg" alt="" uk-cover>
                             <a class="uk-position-absolute uk-transform-center" style="left: 50%; top: 50%"
-                                href="#modal_viejo" uk-marker uk-tooltip="ver más" uk-toggle
+                                href="#modal_full" uk-marker uk-tooltip="ver más" uk-toggle
                                 onclick="cargarModal('mane')"></a>
                         </div>
                     </li>
                     <li>
                         <div class="uk-position-cover uk-animation-kenburns">
-                            <img src="imagenes/renacer.png" alt="" uk-cover>
+                            <img loading="lazy" src="imagenes/renacer.png" alt="" uk-cover>
                             <a class="uk-position-absolute uk-transform-center" style="left: 50%; top: 50%"
-                                href="#modal_viejo" uk-marker uk-tooltip="ver más" uk-toggle
+                                href="#modal_full" uk-marker uk-tooltip="ver más" uk-toggle
                                 onclick="cargarModal('renacer')"></a>
                         </div>
                     </li>
                     <li>
                         <div class="uk-position-cover uk-animation-kenburns">
-                            <img src="imagenes/jazz.jpg" alt="" uk-cover>
+                            <img loading="lazy" src="imagenes/jazz.jpg" alt="" uk-cover>
                             <a class="uk-position-absolute uk-transform-center" style="left: 50%; top: 50%"
-                                href="#modal_viejo" uk-marker uk-tooltip="ver más" uk-toggle
+                                href="#modal_full" uk-marker uk-tooltip="ver más" uk-toggle
                                 onclick="cargarModal('jazz')"></a>
                         </div>
                     </li>
                     <li>
                         <div class="uk-position-cover uk-animation-kenburns">
-                            <img src="imagenes/patines.jpg" alt="" uk-cover>
+                            <img loading="lazy" src="imagenes/patines.jpg" alt="" uk-cover>
                             <a class="uk-position-absolute uk-transform-center" style="left: 50%; top: 50%"
-                                href="#modal_viejo" uk-marker uk-tooltip="ver más" uk-toggle
+                                href="#modal_full" uk-marker uk-tooltip="ver más" uk-toggle
                                 onclick="cargarModal('patines')"></a>
                         </div>
                     </li>
@@ -317,41 +316,41 @@
                 <ul class="uk-slideshow-items">
                     <li>
                         <div class="uk-position-cover uk-animation-kenburns">
-                            <img src="imagenes/abstract1.png" alt="" uk-cover>
+                            <img loading="lazy" src="imagenes/abstract1.png" alt="" uk-cover>
                             <a class="uk-position-absolute uk-transform-center" style="left: 50%; top: 50%"
-                                href="#modal_viejo" uk-marker uk-tooltip="ver más" uk-toggle
+                                href="#modal_full" uk-marker uk-tooltip="ver más" uk-toggle
                                 onclick="cargarModal('abstract1')"></a>
                         </div>
                     </li>
                     <li>
                         <div class="uk-position-cover uk-animation-kenburns">
-                            <img src="imagenes/crisol.png" alt="" uk-cover>
+                            <img loading="lazy" src="imagenes/crisol.png" alt="" uk-cover>
                             <a class="uk-position-absolute uk-transform-center" style="left: 50%; top: 50%"
-                                href="#modal_viejo" uk-marker uk-tooltip="ver más" uk-toggle
+                                href="#modal_full" uk-marker uk-tooltip="ver más" uk-toggle
                                 onclick="cargarModal('crisol')"></a>
                         </div>
                     </li>
                     <li>
                         <div class="uk-position-cover uk-animation-kenburns">
-                            <img src="imagenes/abstract2.png" alt="" uk-cover>
+                            <img loading="lazy" src="imagenes/abstract2.png" alt="" uk-cover>
                             <a class="uk-position-absolute uk-transform-center" style="left: 50%; top: 50%"
-                                href="#modal_viejo" uk-marker uk-tooltip="ver más" uk-toggle
+                                href="#modal_full" uk-marker uk-tooltip="ver más" uk-toggle
                                 onclick="cargarModal('paleta')"></a>
                         </div>
                     </li>
                     <li>
                         <div class="uk-position-cover uk-animation-kenburns">
-                            <img src="imagenes/abstract3.png" alt="" uk-cover>
+                            <img loading="lazy" src="imagenes/abstract3.png" alt="" uk-cover>
                             <a class="uk-position-absolute uk-transform-center" style="left: 50%; top: 50%"
-                                href="#modal_viejo" uk-marker uk-tooltip="ver más" uk-toggle
+                                href="#modal_full" uk-marker uk-tooltip="ver más" uk-toggle
                                 onclick="cargarModal('abstract3')"></a>
                         </div>
                     </li>
                     <li>
                         <div class="uk-position-cover uk-animation-kenburns">
-                            <img src="imagenes/infinito.jpg" alt="" uk-cover>
+                            <img loading="lazy" src="imagenes/infinito.jpg" alt="" uk-cover>
                             <a class="uk-position-absolute uk-transform-center" style="left: 50%; top: 50%"
-                                href="#modal_viejo" uk-marker uk-tooltip="ver más" uk-toggle
+                                href="#modal_full" uk-marker uk-tooltip="ver más" uk-toggle
                                 onclick="cargarModal('infinito')"></a>
                         </div>
                     </li>
@@ -369,17 +368,17 @@
                 <ul class="uk-slideshow-items">
                     <li>
                         <div class="uk-position-cover uk-animation-kenburns">
-                            <img src="imagenes/pasteles1.png" alt="" uk-cover>
+                            <img loading="lazy" src="imagenes/pasteles1.png" alt="" uk-cover>
                             <a class="uk-position-absolute uk-transform-center" style="left: 50%; top: 50%"
-                                href="#modal_viejo" uk-marker uk-tooltip="ver más" uk-toggle
+                                href="#modal_full" uk-marker uk-tooltip="ver más" uk-toggle
                                 onclick="cargarModal('pasteles1')"></a>
                         </div>
                     </li>
                     <li>
                         <div class="uk-position-cover uk-animation-kenburns">
-                            <img src="imagenes/pasteles2.png" alt="" uk-cover>
+                            <img loading="lazy" src="imagenes/pasteles2.png" alt="" uk-cover>
                             <a class="uk-position-absolute uk-transform-center" style="left: 50%; top: 50%"
-                                href="#modal_viejo" uk-marker uk-tooltip="ver más" uk-toggle
+                                href="#modal_full" uk-marker uk-tooltip="ver más" uk-toggle
                                 onclick="cargarModal('pasteles2')"></a>
                         </div>
                     </li>
@@ -397,17 +396,17 @@
                 <ul class="uk-slideshow-items">
                     <li>
                         <div class="uk-position-cover uk-animation-kenburns">
-                            <img src="imagenes/expo1.png" alt="" uk-cover>
+                            <img loading="lazy" src="imagenes/expo1.png" alt="" uk-cover>
                             <a class="uk-position-absolute uk-transform-center" style="left: 50%; top: 50%"
-                                href="#modal_viejo" uk-marker uk-tooltip="ver más" uk-toggle
+                                href="#modal_full" uk-marker uk-tooltip="ver más" uk-toggle
                                 onclick="cargarModal('expo1')"></a>
                         </div>
                     </li>
                     <li>
                         <div class="uk-position-cover uk-animation-kenburns">
-                            <img src="imagenes/expo2.png" alt="" uk-cover>
+                            <img loading="lazy" src="imagenes/expo2.png" alt="" uk-cover>
                             <a class="uk-position-absolute uk-transform-center" style="left: 50%; top: 50%"
-                                href="#modal_viejo" uk-marker uk-tooltip="ver más" uk-toggle
+                                href="#modal_full" uk-marker uk-tooltip="ver más" uk-toggle
                                 onclick="cargarModal('expo2')"></a>
                         </div>
                     </li>
@@ -422,7 +421,7 @@
         </section>
     </section>
 
-    <div id="modal_viejo" class="uk-modal-full" uk-modal>
+    <div id="modal_full" class="uk-modal-full" uk-modal>
         <div class="uk-modal-dialog">
             <button class="uk-modal-close-default" type="button" uk-close></button>
             <div class="uk-grid-collapse uk-child-width-1-2@s uk-flex-middle" uk-grid>
@@ -434,14 +433,13 @@
             </div>
         </div>
     </div>
-    <a href="#" uk-totop uk-scroll></a>
+    <a href="#" id="to-top" uk-totop uk-scroll></a>
     <footer>
         <p>
             Creado por
             <a href="https://mail.google.com/mail/?view=cm&amp;fs=1&amp;to=upwardsd@gmail.com" target="_">
-                <img alt="Upward" id="upward" src="imagenes/logo upward.png" />
+                <img loading="lazy" alt="Upward" id="upward" src="imagenes/marcaUPward.png" />
             </a>
-            Upward
         </p>
     </footer>
 </body>

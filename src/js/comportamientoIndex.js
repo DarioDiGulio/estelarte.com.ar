@@ -163,7 +163,8 @@ const infinito = {
   id: "infinito",
   url: "url('imagenes/infinito.jpg')",
   title: "Abstracto",
-  description: "¿Sabías que en la cultura quechua el color azul representa el infinito? (araxa- pacha).",
+  description:
+    "¿Sabías que en la cultura quechua el color azul representa el infinito? (araxa- pacha).",
 };
 
 const paris = {
@@ -262,7 +263,6 @@ function cargarModal(cuadro) {
   document.getElementById("description_modal").innerHTML =
     dataCuadro.description;
   document.getElementById("image_modal").style.backgroundImage = dataCuadro.url;
-  // UIkit.modal("#modal_viejo").toggle();
 }
 
 function bucarDataCuadro(idCuadro) {
@@ -271,71 +271,4 @@ function bucarDataCuadro(idCuadro) {
       return cuadro;
     }
   }
-}
-
-// function crearModal() {
-//   let divPadre = crearDivPadre();
-//   let divHijo = crearDivHijo();
-//   let botonClose = crearBotonClose();
-//   let divInterno = crearDivInterno();
-//   let divImage = crearDivImage();
-//   let divDescription = crearDivDescription();
-//   divPadre.appendChild(divHijo);
-//   divPadre.appendChild(botonClose);
-//   divPadre.appendChild(divInterno);
-//   divInterno.appendChild(divImage);
-//   divInterno.appendChild(divDescription);
-//   var body = document.getElementsByTagName("body")[0]
-//   body.appendChild(divPadre);
-//   console.log(body);
-
-// }
-
-function crearDivPadre() {
-  let div = document.createElement("div");
-  div.id = "modal_viejo";
-  div.className = "uk-modal-ful";
-  div.setAttribute("uk-modal", "");
-  return div;
-}
-
-function crearDivHijo() {
-  let div = document.createElement("div");
-  div.className = "uk-modal-dialog";
-  return div;
-}
-
-function crearBotonClose() {
-  let button = document.createElement("button");
-  button.className = "uk-modal-close-default";
-  button.type = "button";
-  button.setAttribute("uk-close", "");
-  return button;
-}
-
-function crearDivInterno() {
-  let div = document.createElement("div");
-  div.className = "uk-grid-collapse uk-child-width-1-2@s uk-flex-middle";
-  div.setAttribute("uk-grid", "");
-  return div;
-}
-
-function crearDivImage() {
-  let div = document.createElement("div");
-  div.id = "iamge_modal";
-  div.className = "uk-background-conver";
-  div.setAttribute("uk-height-viewport", "");
-  return div;
-}
-
-function crearDivDescription() {
-  let div = document.createElement("div");
-  div.className = "uk-padding-large";
-  let h1 = document.createElement("h1");
-  h1.id = "title_modal";
-  let p = document.createElement("h1");
-  p.id = "description_modal";
-  div.appendChild(h1);
-  div.appendChild(p);
-  return div;
 }
