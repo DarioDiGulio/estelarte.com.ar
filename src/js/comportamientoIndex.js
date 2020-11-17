@@ -223,6 +223,62 @@ const calas = {
   description: "No dejes que le de sed al árbol del que eres sol. FK.",
 };
 
+const sobrevolando = {
+  id: "sobrevolando",
+  url: "url('imagenes/sobrevolando.png')",
+  title: "Sobrevolando",
+  description: "Técnica óleo 70x45",
+};
+
+const esperanza = {
+  id: "esperanza",
+  url: "url('imagenes/esperanza.png')",
+  title: "Esperanza",
+  description: "Escencialismo óleo 70x45",
+};
+
+const enpedazos = {
+  id: "enpedazos",
+  url: "url('imagenes/enpedazo.png')",
+  title: "En pedazos",
+  description: "Escencialismo óleo 70x45",
+};
+
+const cristales = {
+  id: "cristales",
+  url: "url('imagenes/cristales.png')",
+  title: "Cristales",
+  description: "Escencialismo óleo 70x45",
+};
+
+const renaciendo = {
+  id: "enaciendo",
+  url: "url('imagenes/renaciendo.png')",
+  title: "Renaciendo",
+  description: "Técnica acrílico fantasía 60 x45",
+};
+
+const pandemia = {
+  id: "pandemia",
+  url: "url('imagenes/pandemia.png')",
+  title: "Pandemia",
+  description: "Escencialismo óleo 70x45",
+};
+
+const nubes = {
+  id: "nubes",
+  url: "url('imagenes/nubes.png')",
+  title: "Nubes",
+  description: "Óleo 75x60 Abstracto",
+};
+
+const estallido = {
+  id: "estallido",
+  url: "url('imagenes/estallido.png')",
+  title: "Estallido",
+  description: "70x45 Óleo escencialismo",
+};
+
 const dataCuadros = [
   viejo,
   bandera,
@@ -255,6 +311,14 @@ const dataCuadros = [
   expo1,
   expo2,
   calas,
+  sobrevolando,
+  esperanza,
+  enpedazos,
+  cristales,
+  renaciendo,
+  pandemia,
+  nubes,
+  estallido,
 ];
 
 function cargarModal(cuadro) {
