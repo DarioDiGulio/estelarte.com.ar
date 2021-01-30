@@ -7,3 +7,4 @@ deployment:
     - /bin/cp -R CANDARA $DEPLOYPATH
     - /bin/cp -R Tipografías $DEPLOYPATH
     - /bin/cp index.html $DEPLOYPATH
+    - /bin/cp -R backoffice $DEPLOYPATH
