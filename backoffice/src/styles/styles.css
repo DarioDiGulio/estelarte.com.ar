@@ -1,0 +1,8 @@
+input, button {
+    border-radius: 10px !important;
+}
+
+input:focus {
+    outline: none !important;
+    border-color: #c2b58f !important;
+}

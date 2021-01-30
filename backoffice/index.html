@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/css/uikit.min.css"
+    />
+    <link rel="stylesheet" href="src/styles/styles.css">
+    <link rel="stylesheet" href="../src/styles/fuente.css">
+    <link rel="stylesheet" href="../src/styles/estilosGeneral.css">
+    <script src="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/js/uikit.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/js/uikit-icons.min.js"></script>
+    <title>Backoffice Estelarte</title>
+  </head>
+  <body>
+    <div class="uk-position-center">
+      <div class="uk-card uk-card-default">
+        <div class="uk-card-media-top uk-text-center">
+          <img
+            class="uk-border-circle"
+            src="../imagenes/estelarte logo sin fondo.png"
+          />
+        </div>
+        <div class="uk-card-body">
+          <h2 class="uk-card-title uk-text-center">Ingresar al Backoffice</h2>
+          <form class="uk-form-stacked" id="login-form-login">
+            <div class="uk-margin">
+              <label class="uk-form-label" for="login-input-user">
+                Usuario
+              </label>
+              <div class="uk-form-controls">
+                <input
+                  class="uk-input"
+                  id="login-input-user"
+                  type="text"
+                  placeholder="Tu usuario de acceso"
+                />
+              </div>
+            </div>
+            <div class="uk-margin">
+              <label class="uk-form-label" for="login-input-password">
+                Contraseña
+              </label>
+              <div class="uk-form-controls">
+                <input
+                  class="uk-input"
+                  id="login-input-password"
+                  type="password"
+                />
+              </div>
+            </div>
+            <div class="uk-margin uk-text-center">
+              <span class="uk-text-danger" id="login-span-error" hidden></span>
+            </div>
+            <button
+              class="uk-button uk-button-secondary uk-width-1-1"
+              type="submit"
+            >
+              Ingresar
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+    <script src="src/js/index.js" type="module"></script>
+  </body>
+</html>

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/css/uikit.min.css"
+    />
+    <link rel="stylesheet" href="../styles/styles.css" />
+    <link rel="stylesheet" href="../../../src/styles/fuente.css" />
+    <link rel="stylesheet" href="../../../src/styles/estilosGeneral.css" />
+    <script src="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/js/uikit.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/js/uikit-icons.min.js"></script>
+    <title>Dashboard</title>
+  </head>
+  <body>
+    <nav class="uk-navbar-container" uk-navbar>
+      <div class="uk-navbar-left">
+        <div class="uk-inline uk-margin-small-left">
+          <a class="uk-navbar-toggle" href="#">
+            <span uk-navbar-toggle-icon></span>
+            <span class="uk-margin-small-left">Menú</span>
+          </a>
+
+          <div uk-dropdown="mode: click">
+            <ul class="uk-nav uk-dropdown-nav">
+              <li class="item-menu">
+                <a href="#hiperrealismo">Nuevo Cuadro</a>
+              </li>
+              <li class="item-menu">
+                <a uk-scroll href="#escencialismo">Nueva Categoría</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="uk-navbar-right">
+        <div class="uk-margin">
+          <button class="uk-button uk-margin-right uk-button-secondary" id="dashboard-button-logout">Salir</button>
+        </div>
+      </div>
+    </nav>
+    <script src="../js/index.js" type="module"></script>
+  </body>
+</html>
