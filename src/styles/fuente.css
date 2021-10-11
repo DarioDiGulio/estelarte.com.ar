@@ -1,8 +1,8 @@
 /* Fuentes */
 
 @font-face {
-  font-family: "CANDARA";
-  src: url("CANDARA/CANDARA.eot");
-  src: local("CANDARA"), url("CANDARA/CANDARA.woff") format("woff"),
+    font-family: "CANDARA";
+    src: url("CANDARA/CANDARA.eot");
+    src: local("CANDARA"), url("CANDARA/CANDARA.woff") format("woff"),
     url("CANDARA/CANDARA.ttf") format("truetype");
 }
