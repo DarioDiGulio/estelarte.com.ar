@@ -16,6 +16,14 @@ const dataCuadros = [
     category: "hiperrealismo",
   },
   {
+    id: "umoja",
+    url: "url('imagenes/umoja.jpeg')",
+    src: "./imagenes/umoja.jpeg",
+    title: "Umoja",
+    description: "Umuja año 2020. Óleo 50 x50.",
+    category: "hiperrealismo",
+  },
+  {
     id: "elefante",
     url: "url('imagenes/elefante.png')",
     src: "./imagenes/elefante.png",
@@ -119,6 +127,14 @@ const dataCuadros = [
     category: "figurativo",
   },
   {
+    id: "desnudo",
+    url: "url('imagenes/desnudo.jpeg')",
+    src: "./imagenes/desnudo.jpeg",
+    title: "Desnudo",
+    description: "50 x 70.",
+    category: "figurativo",
+  },
+  {
     id: "mane",
     url: "url('imagenes/marianela.jpg')",
     src: "./imagenes/marianela.jpg",
@@ -148,6 +164,38 @@ const dataCuadros = [
     src: "./imagenes/anju.png",
     title: "Anju",
     description: "No busques con los ojos lo que puedes ver con el corazón.",
+    category: "hiperrealismo",
+  },
+  {
+    id: "cielo",
+    url: "url('imagenes/cielo.jpeg')",
+    src: "./imagenes/cielo.jpeg",
+    title: "Cielo",
+    description: "",
+    category: "hiperrealismo",
+  },
+  {
+    id: "bronca",
+    url: "url('imagenes/bronca.jpeg')",
+    src: "./imagenes/bronca.jpeg",
+    title: "Bronca",
+    description: "",
+    category: "hiperrealismo",
+  },
+  {
+    id: "ola",
+    url: "url('imagenes/ola.jpeg')",
+    src: "./imagenes/ola.jpeg",
+    title: "Mar",
+    description: "Renacer",
+    category: "pandemia",
+  },
+  {
+    id: "refugio",
+    url: "url('imagenes/refugio.png')",
+    src: "./imagenes/refugio.png",
+    title: "El refugio",
+    description: "tec oleo con pincel seco en madera medidas 60x75 año 2005",
     category: "hiperrealismo",
   },
   {
@@ -208,11 +256,11 @@ const dataCuadros = [
     category: "figurativo",
   },
   {
-    id: "refugio",
-    url: "url('imagenes/refugio.png')",
-    src: "./imagenes/refugio.png",
-    title: "El refugio",
-    description: "tec oleo con pincel seco en madera medidas 60x75 año 2005",
+    id: "calas",
+    url: "url('imagenes/calas.png')",
+    src: "./imagenes/calas.png",
+    title: "Calas",
+    description: "No dejes que le de sed al árbol del que eres sol. FK.",
     category: "hiperrealismo",
   },
   {
@@ -230,30 +278,6 @@ const dataCuadros = [
     title: "Ensueño II",
     description: "Serie de cuadros pintados con pasteles.",
     category: "pasteles",
-  },
-  {
-    id: "expo1",
-    url: "url('imagenes/expo1.png')",
-    src: "./imagenes/expo1.png",
-    title: "Exposición en Buenos Aires",
-    description: "2014",
-    category: "expo",
-  },
-  {
-    id: "expo2",
-    url: "url('imagenes/expo2.png')",
-    src: "./imagenes/expo2.png",
-    title: "Exposición en París",
-    description: "2019",
-    category: "expo",
-  },
-  {
-    id: "calas",
-    url: "url('imagenes/calas.png')",
-    src: "./imagenes/calas.png",
-    title: "Calas",
-    description: "No dejes que le de sed al árbol del que eres sol. FK.",
-    category: "hiperrealismo",
   },
   {
     id: "sobrevolando",
@@ -319,12 +343,93 @@ const dataCuadros = [
     description: "70x45 Óleo escencialismo",
     category: "veinte",
   },
+  {
+    id: "finPandemia",
+    url: "url('imagenes/finPandemia.jpeg')",
+    src: "./imagenes/finPandemia.jpeg",
+    title: "Resiliencia",
+    description: "70x50 Óleo",
+    category: "pandemia",
+  },
+  {
+    id: "expo1",
+    url: "url('imagenes/expo1.png')",
+    src: "./imagenes/expo1.png",
+    title: "Exposición en Buenos Aires",
+    description: "2014",
+    category: "expo",
+  },
+  {
+    id: "expo2",
+    url: "url('imagenes/expo2.png')",
+    src: "./imagenes/expo2.png",
+    title: "Exposición en París",
+    description: "2019",
+    category: "expo",
+  },
+  {
+    id: "barolo1",
+    url: "url('imagenes/barolo1.jpeg')",
+    src: "./imagenes/barolo1.jpeg",
+    title: "Exposición en el palacio Barolo, Buenos Aires",
+    description: "2021",
+    category: "expo",
+  },
+  {
+    id: "barolo2",
+    url: "url('imagenes/barolo2.jpeg')",
+    src: "./imagenes/barolo2.jpeg",
+    title: "Exposición en el palacio Barolo, Buenos Aires",
+    description: "2021",
+    category: "expo",
+  },
+  {
+    id: "barolo3",
+    url: "url('imagenes/barolo3.jpeg')",
+    src: "./imagenes/barolo3.jpeg",
+    title: "Exposición en el palacio Barolo, Buenos Aires",
+    description: "2021",
+    category: "expo",
+  },
+  {
+    id: "barolo4",
+    url: "url('imagenes/barolo4.jpeg')",
+    src: "./imagenes/barolo4.jpeg",
+    title: "Exposición en el palacio Barolo, Buenos Aires",
+    description: "2021",
+    category: "expo",
+  },
+  {
+    id: "barolo6",
+    url: "url('imagenes/barolo6.jpeg')",
+    src: "./imagenes/barolo6.jpeg",
+    title: "Exposición en el palacio Barolo, Buenos Aires",
+    description: "2021",
+    category: "expo",
+  },
+  {
+    id: "barolo7",
+    url: "url('imagenes/barolo7.jpeg')",
+    src: "./imagenes/barolo7.jpeg",
+    title: "Exposición en el palacio Barolo, Buenos Aires",
+    description: "2021",
+    category: "expo",
+  },
+  {
+    id: "louvre2021",
+    url: "url('imagenes/louvreExpo.jpeg')",
+    src: "./imagenes/louvreExpo.jpeg",
+    title: "Exposición en el Louvre, Paris",
+    description: "2021",
+    category: "expo",
+  },
 ];
 
 function cargarModal(event) {
   let nodeHtml = event.target.parentElement;
-  if (nodeHtml.nodeName === 'SPAN') nodeHtml = nodeHtml.parentElement;
-  else if (nodeHtml.nodeName === 'SVG') nodeHtml = nodeHtml.parentElement.parentElement;
+  if (nodeHtml.nodeName === "SPAN") nodeHtml = nodeHtml.parentElement;
+  else if (nodeHtml.nodeName === "SVG")
+    nodeHtml = nodeHtml.parentElement.parentElement;
   let dataCuadro = searchPicture(nodeHtml.id);
   document.getElementById("title_modal").innerHTML = dataCuadro.title;
   document.getElementById("description_modal").innerHTML =
