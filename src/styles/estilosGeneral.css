@@ -2,15 +2,13 @@
 
 * {
   margin: 0;
+  font-family: "CANDARA" !important;
 }
-a {
-  text-decoration: none;
-  color: #c2b58f !important;
-}
-a:before {
-  color: #c2b58f !important;
-}
+
+a,
+a:before,
 a:visited {
+  text-decoration: none;
   color: #c2b58f !important;
 }
 
@@ -20,14 +18,17 @@ a:visited {
   text-align: right;
   margin-right: 5%;
 }
+
 #logo {
   text-align: center;
 }
+
 #logo img {
   width: 90vw;
   margin-top: 20%;
   margin-bottom: 20%;
 }
+
 .img-redes {
   height: 3.5vh;
 }
@@ -61,9 +62,9 @@ hr {
 aside {
   text-align: center;
   margin: 5%;
-  font-family: "CANDARA";
   margin-bottom: 15%;
 }
+
 aside p {
   color: #c2b58f !important;
   font-size: 1rem;
@@ -75,7 +76,6 @@ section p,
 h2 {
   color: #c2b58f !important;
   background-color: #e7e7e8;
-  font-family: "CANDARA";
   text-align: center;
   font-size: 2rem;
   margin-bottom: 4%;
@@ -83,6 +83,12 @@ h2 {
 
 section {
   text-align: center;
+}
+
+span[uk-icon] {
+  background-color: #e7e7e8;
+  padding: 7px;
+  border-radius: 100px;
 }
 
 /* Pie de página */
@@ -93,6 +99,7 @@ section {
   padding: 5px;
   background-color: #c2b58f;
   color: #e7e7e8 !important;
+  cursor: pointer;
 }
 
 footer {
@@ -104,7 +111,6 @@ footer {
 }
 
 footer p {
-  font-family: "CANDARA";
   font-weight: bold;
   font-size: 0.9rem;
   color: #c2b58f;

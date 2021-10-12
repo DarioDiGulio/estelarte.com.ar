@@ -321,10 +321,14 @@ const dataCuadros = [
   },
 ];
 
-function cargarModal(cuadro) {
-  let dataCuadro = searchPicture(cuadro);
+function cargarModal(event) {
+  let nodeHtml = event.target.parentElement;
+  if (nodeHtml.nodeName === 'SPAN') nodeHtml = nodeHtml.parentElement;
+  else if (nodeHtml.nodeName === 'SVG') nodeHtml = nodeHtml.parentElement.parentElement;
+  let dataCuadro = searchPicture(nodeHtml.id);
   document.getElementById("title_modal").innerHTML = dataCuadro.title;
-  document.getElementById("description_modal").innerHTML = dataCuadro.description;
+  document.getElementById("description_modal").innerHTML =
+    dataCuadro.description;
   document.getElementById("image_modal").style.backgroundImage = dataCuadro.url;
 }
 
@@ -340,15 +344,16 @@ function loadPictures() {
             <div class="uk-position-cover uk-animation-kenburns">
                 <img loading="lazy" src="${picture.src}" alt="${picture.title}" uk-cover>
                 <a class="uk-position-absolute uk-transform-center" style="left: 50%; top: 50%"
-                href="#modal_full" uk-marker uk-tooltip="ver más" uk-toggle
-                id="${picture.id}"></a>
+                href="#modal_full" uk-tooltip="Descripción" uk-toggle
+                id="${picture.id}"><span uk-icon="search"></span></a>
             </div>
         </li>
       `;
-    document
-      .getElementById(picture.id)
-      .addEventListener("click", cargarModal(picture.id));
   });
 }
 
 loadPictures();
+
+dataCuadros.forEach((cuadro) => {
+  document.getElementById(cuadro.id).addEventListener("click", cargarModal);
+});
