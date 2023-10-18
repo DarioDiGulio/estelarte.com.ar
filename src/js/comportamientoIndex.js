@@ -3,7 +3,7 @@ const dataCuadros = [
     id: "viejo",
     url: "url('imagenes/viejo.png')",
     src: "./imagenes/viejo.png",
-    title: "Don José",
+    title: "Don Jos&eacute;",
     description: "La vejez empieza cuando perdemos la curiosidad.",
     category: "hiperrealismo",
   },
@@ -20,7 +20,7 @@ const dataCuadros = [
     url: "url('imagenes/umoja.jpeg')",
     src: "./imagenes/umoja.jpeg",
     title: "Umoja",
-    description: "Umuja año 2020. Óleo 50 x50.",
+    description: "Umuja año 2020. &Oacute;leo 50 x50.",
     category: "hiperrealismo",
   },
   {
@@ -69,7 +69,7 @@ const dataCuadros = [
     url: "url('imagenes/avenida.png')",
     src: "./imagenes/avenida.png",
     title: "Buenos Aires",
-    description: "Las luces de mi ciudad, esperan siempre allí.",
+    description: "Las luces de mi ciudad, esperan siempre all&iacute;.",
     category: "hiperrealismo",
   },
   {
@@ -78,7 +78,7 @@ const dataCuadros = [
     src: "./imagenes/uruguay.png",
     title: "Silencio",
     description:
-      "Historias de pinceles. Viajando por las playas de Uruguay el paisaje me encontró, y entonces se lo conté al lienzo que esperaba teñirse de color.",
+      "Historias de pinceles. Viajando por las playas de Uruguay el paisaje me encontr&oacute;, y entonces se lo cont&eacute; al lienzo que esperaba teñirse de color.",
     category: "hiperrealismo",
   },
   {
@@ -87,7 +87,7 @@ const dataCuadros = [
     src: "./imagenes/madre.png",
     title: "Desde el Alma",
     description:
-      "No hay cielo tan puro como tu voz, no hay mar tan profundo como tu mirada y no hay sabio tan sabio que me enseñe lo que has venido a enseñarme tu hijo mío. Gracias a D.DG.",
+      "No hay cielo tan puro como tu voz, no hay mar tan profundo como tu mirada y no hay sabio tan sabio que me enseñe lo que has venido a enseñarme tu hijo m&iacute;o. Gracias a D.DG.",
     category: "hiperrealismo",
   },
   {
@@ -105,7 +105,7 @@ const dataCuadros = [
     src: "./imagenes/louis.png",
     title: "Mundo maravilloso",
     description:
-      "Veo cielos de color azul, y nubes de color blanco. El brillante bendecido día, la oscura sagrada noche, y pienso para mí... qué mundo tan maravilloso.",
+      "Veo cielos de color azul, y nubes de color blanco. El brillante bendecido d&iacute;a, la oscura sagrada noche, y pienso para m&iacute;... qu&eacute; mundo tan maravilloso.",
     category: "hiperrealismo",
   },
   {
@@ -114,7 +114,7 @@ const dataCuadros = [
     src: "./imagenes/tigre.png",
     title: "Miradas",
     description:
-      "Historias de pinceles : Un día alguien me dijo: 'Me gustaría ver esta imagen pintada en grande para poderla contemplar día tras dia'. Así es como surgió Miradas.",
+      "Historias de pinceles : Un d&iacute;a alguien me dijo: 'Me gustar&iacute;a ver esta imagen pintada en grande para poderla contemplar d&iacute;a tras dia'. As&iacute; es como surgi&oacute; Miradas.",
     category: "hiperrealismo",
   },
   {
@@ -123,7 +123,7 @@ const dataCuadros = [
     src: "./imagenes/estela.jpg",
     title: "Miradas",
     description:
-      "Técnica: arte figurativo con acrilico. Medias: 50x80. Año: 2018",
+      "T&eacute;cnica: arte figurativo con acrilico. Medias: 50x80. Año: 2018",
     category: "figurativo",
   },
   {
@@ -163,7 +163,7 @@ const dataCuadros = [
     url: "url('imagenes/anju.png')",
     src: "./imagenes/anju.png",
     title: "Anju",
-    description: "No busques con los ojos lo que puedes ver con el corazón.",
+    description: "No busques con los ojos lo que puedes ver con el coraz&oacute;n.",
     category: "hiperrealismo",
   },
   {
@@ -219,7 +219,7 @@ const dataCuadros = [
     url: "url('imagenes/abstract2.png')",
     src: "./imagenes/abstract2.png",
     title: "Desde la pleta",
-    description: "Técnica abstracto con acrilico medidas 80x80 año 2018",
+    description: "T&eacute;cnica abstracto con acrilico medidas 80x80 año 2018",
     category: "abstract",
   },
   {
@@ -236,14 +236,14 @@ const dataCuadros = [
     src: "./imagenes/infinito.jpg",
     title: "Abstracto",
     description:
-      "¿Sabías que en la cultura quechua el color azul representa el infinito? (araxa- pacha).",
+      "¿Sab&iacute;as que en la cultura quechua el color azul representa el infinito? (araxa- pacha).",
     category: "abstract",
   },
   {
     id: "paris",
     url: "url('imagenes/paris.jpg')",
     src: "./imagenes/paris.jpg",
-    title: "París",
+    title: "Par&iacute;s",
     description: "Del caos a la calma . Obra escencialista",
     category: "escencialismo",
   },
@@ -284,7 +284,7 @@ const dataCuadros = [
     url: "url('imagenes/sobrevolando.png')",
     src: "./imagenes/sobrevolando.png",
     title: "Sobrevolando",
-    description: "Técnica óleo 70x45",
+    description: "T&eacute;cnica &oacute;leo 70x45",
     category: "veinte",
   },
   {
@@ -292,7 +292,7 @@ const dataCuadros = [
     url: "url('imagenes/esperanza.png')",
     src: "./imagenes/esperanza.png",
     title: "Esperanza",
-    description: "Escencialismo óleo 70x45",
+    description: "Escencialismo &oacute;leo 70x45",
     category: "veinte",
   },
   {
@@ -300,7 +300,7 @@ const dataCuadros = [
     url: "url('imagenes/enpedazo.png')",
     src: "./imagenes/enpedazo.png",
     title: "En pedazos",
-    description: "Escencialismo óleo 70x45",
+    description: "Escencialismo &oacute;leo 70x45",
     category: "veinte",
   },
   {
@@ -308,7 +308,7 @@ const dataCuadros = [
     url: "url('imagenes/cristales.png')",
     src: "./imagenes/cristales.png",
     title: "Cristales",
-    description: "Escencialismo óleo 70x45",
+    description: "Escencialismo &oacute;leo 70x45",
     category: "veinte",
   },
   {
@@ -316,7 +316,7 @@ const dataCuadros = [
     url: "url('imagenes/renaciendo.png')",
     src: "./imagenes/renaciendo.png",
     title: "Renaciendo",
-    description: "Técnica acrílico fantasía 60 x45",
+    description: "T&eacute;cnica acr&iacute;lico fantas&iacute;a 60 x45",
     category: "veinte",
   },
   {
@@ -324,7 +324,7 @@ const dataCuadros = [
     url: "url('imagenes/pandemia.png')",
     src: "./imagenes/pandemia.png",
     title: "Pandemia",
-    description: "Escencialismo óleo 70x45",
+    description: "Escencialismo &oacute;leo 70x45",
     category: "veinte",
   },
   {
@@ -332,7 +332,7 @@ const dataCuadros = [
     url: "url('imagenes/nubes.png')",
     src: "./imagenes/nubes.png",
     title: "Nubes",
-    description: "Óleo 75x60 Abstracto",
+    description: "&Oacute;leo 75x60 Abstracto",
     category: "veinte",
   },
   {
@@ -340,7 +340,7 @@ const dataCuadros = [
     url: "url('imagenes/estallido.png')",
     src: "./imagenes/estallido.png",
     title: "Estallido",
-    description: "70x45 Óleo escencialismo",
+    description: "70x45 &Oacute;leo escencialismo",
     category: "veinte",
   },
   {
@@ -348,14 +348,14 @@ const dataCuadros = [
     url: "url('imagenes/finPandemia.jpeg')",
     src: "./imagenes/finPandemia.jpeg",
     title: "Resiliencia",
-    description: "70x50 Óleo",
+    description: "70x50 &Oacute;leo",
     category: "pandemia",
   },
   {
     id: "expo1",
     url: "url('imagenes/expo1.png')",
     src: "./imagenes/expo1.png",
-    title: "Exposición en Buenos Aires",
+    title: "Exposici&oacute;n en Buenos Aires",
     description: "2014",
     category: "expo",
   },
@@ -363,7 +363,7 @@ const dataCuadros = [
     id: "expo2",
     url: "url('imagenes/expo2.png')",
     src: "./imagenes/expo2.png",
-    title: "Exposición en París",
+    title: "Exposici&oacute;n en Par&iacute;s",
     description: "2019",
     category: "expo",
   },
@@ -371,7 +371,7 @@ const dataCuadros = [
     id: "barolo1",
     url: "url('imagenes/barolo1.jpeg')",
     src: "./imagenes/barolo1.jpeg",
-    title: "Exposición en el palacio Barolo, Buenos Aires",
+    title: "Exposici&oacute;n en el palacio Barolo, Buenos Aires",
     description: "2021",
     category: "expo",
   },
@@ -379,7 +379,7 @@ const dataCuadros = [
     id: "barolo2",
     url: "url('imagenes/barolo2.jpeg')",
     src: "./imagenes/barolo2.jpeg",
-    title: "Exposición en el palacio Barolo, Buenos Aires",
+    title: "Exposici&oacute;n en el palacio Barolo, Buenos Aires",
     description: "2021",
     category: "expo",
   },
@@ -387,7 +387,7 @@ const dataCuadros = [
     id: "barolo3",
     url: "url('imagenes/barolo3.jpeg')",
     src: "./imagenes/barolo3.jpeg",
-    title: "Exposición en el palacio Barolo, Buenos Aires",
+    title: "Exposici&oacute;n en el palacio Barolo, Buenos Aires",
     description: "2021",
     category: "expo",
   },
@@ -395,7 +395,7 @@ const dataCuadros = [
     id: "barolo4",
     url: "url('imagenes/barolo4.jpeg')",
     src: "./imagenes/barolo4.jpeg",
-    title: "Exposición en el palacio Barolo, Buenos Aires",
+    title: "Exposici&oacute;n en el palacio Barolo, Buenos Aires",
     description: "2021",
     category: "expo",
   },
@@ -403,7 +403,7 @@ const dataCuadros = [
     id: "barolo6",
     url: "url('imagenes/barolo6.jpeg')",
     src: "./imagenes/barolo6.jpeg",
-    title: "Exposición en el palacio Barolo, Buenos Aires",
+    title: "Exposici&oacute;n en el palacio Barolo, Buenos Aires",
     description: "2021",
     category: "expo",
   },
@@ -411,7 +411,7 @@ const dataCuadros = [
     id: "barolo7",
     url: "url('imagenes/barolo7.jpeg')",
     src: "./imagenes/barolo7.jpeg",
-    title: "Exposición en el palacio Barolo, Buenos Aires",
+    title: "Exposici&oacute;n en el palacio Barolo, Buenos Aires",
     description: "2021",
     category: "expo",
   },
@@ -419,7 +419,7 @@ const dataCuadros = [
     id: "louvre2021",
     url: "url('imagenes/louvreExpo.jpeg')",
     src: "./imagenes/louvreExpo.jpeg",
-    title: "Exposición en el Louvre, Paris",
+    title: "Exposici&oacute;n en el Louvre, Paris",
     description: "2021",
     category: "expo",
   },
@@ -449,7 +449,7 @@ function loadPictures() {
             <div class="uk-position-cover uk-animation-kenburns">
                 <img loading="lazy" src="${picture.src}" alt="${picture.title}" uk-cover>
                 <a class="uk-position-absolute uk-transform-center" style="left: 50%; top: 50%"
-                href="#modal_full" uk-tooltip="Descripción" uk-toggle
+                href="#modal_full" uk-tooltip="Descripci&oacute;n" uk-toggle
                 id="${picture.id}"><span uk-icon="search"></span></a>
             </div>
         </li>

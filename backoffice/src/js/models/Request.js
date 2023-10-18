@@ -17,7 +17,7 @@ class $Request {
     if (HTTPHelper[inputMethod]) {
       this.method = inputMethod;
     } else {
-      throw new Error(`El método HTTP ${inputMethod} no es correcto.`);
+      throw new Error(`El m&eacute;todo HTTP ${inputMethod} no es correcto.`);
     }
   }
 }

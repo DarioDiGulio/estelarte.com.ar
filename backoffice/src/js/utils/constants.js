@@ -130,8 +130,8 @@ export const randomInt = (min, max) => parseInt(Math.random() * max, 10) + min;
 
 /* Messages */
 
-export const SUCCESS_MESSAGE = 'Transacción realizada con éxito';
-export const GENERAL_ERROR = 'Ocurrió un error inesperado';
+export const SUCCESS_MESSAGE = 'Transacci&oacute;n realizada con &eacute;xito';
+export const GENERAL_ERROR = 'Ocurri&oacute; un error inesperado';
 export const FORM_ERROR = 'Alguno de los campos no cumple con los requisitos esperados';
 
 export const showNotification = (status, title) => {
