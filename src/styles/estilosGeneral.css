@@ -91,6 +91,10 @@ span[uk-icon] {
   border-radius: 100px;
 }
 
+#price {
+  color: #c2b58f;
+}
+
 /* Pie de página */
 
 #to-top {
