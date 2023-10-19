@@ -97,7 +97,16 @@ span[uk-icon] {
 .icon-cart {
   cursor: pointer;
   color: #c2b58f !important;
+}
 
+#to-cart {
+  position: fixed;
+  bottom: 25px;
+  right: 25px;
+  width: 30px;
+  height: 30px;
+  display: flex;
+  justify-content: center;
 }
 
 .amount-cart-item {

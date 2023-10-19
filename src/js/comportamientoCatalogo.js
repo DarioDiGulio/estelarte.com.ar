@@ -123,3 +123,6 @@ function addEventsToUpdateCart() {
 
 loadPictures();
 addEventsToUpdateCart();
+
+const toCartButton = document.getElementById('to-cart');
+toCartButton.addEventListener('click', () => window.location.replace('carrito.html'))
