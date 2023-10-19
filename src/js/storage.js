@@ -14,9 +14,15 @@ function eliminarProducto(index) {
     return carrito
 }
 
+function existeProductoEnCarrito(id) {
+    const carrito = JSON.parse(localStorage.getItem('carrito'))
+    const filter = carrito.filter(producto => producto.id === id)
+    return filter.length !== 0
+}
+
 function agregarProducto(id) {
     const carrito = JSON.parse(localStorage.getItem('carrito'))
-    if (carrito.length === 0) {
+    if (carrito.length === 0 || !existeProductoEnCarrito(id)) {
         carrito.push({id, 'cantidad': 1})
     } else {
         carrito.forEach(producto => {
@@ -33,7 +39,7 @@ function descontarProducto(id) {
     } else {
         carrito.forEach((producto, index) => {
             if (producto.id === id) restarCantidad(producto);
-            if (producto.cantidad <= 0) carrito = eliminarProducto(producto.id, index);
+            if (producto.cantidad <= 0) carrito = eliminarProducto(index);
         })
     }
     localStorage.setItem('carrito', JSON.stringify(carrito))
