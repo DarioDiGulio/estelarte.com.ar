@@ -105,14 +105,18 @@ function loadPictures() {
 }
 
 function addEventsToUpdateCart() {
-    dataProductos.forEach((picture) => {
-        const plusButton = document.getElementById(`add-cart-${picture.id}`)
-        const minusButton = document.getElementById(`minus-cart-${picture.id}`)
-        const amountValue = document.getElementById(`amount-cart-item-${picture.id}`)
-        plusButton.addEventListener('click', () => amountValue.innerText = `${(parseInt(amountValue.innerText) + 1)}`);
+    dataProductos.forEach((product) => {
+        const plusButton = document.getElementById(`add-cart-${product.id}`)
+        const minusButton = document.getElementById(`minus-cart-${product.id}`)
+        const amountValue = document.getElementById(`amount-cart-item-${product.id}`)
+        plusButton.addEventListener('click', () => {
+            amountValue.innerText = `${(parseInt(amountValue.innerText) + 1)}`
+            agregarProducto(product.id)
+        });
         minusButton.addEventListener('click', () => {
             const currentValue = parseInt(amountValue.innerText);
             if (currentValue > 0) amountValue.innerText = `${currentValue - 1}`;
+            descontarProducto(product.id)
         });
     });
 }
