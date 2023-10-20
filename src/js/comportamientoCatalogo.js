@@ -7,15 +7,16 @@ function loadPictures() {
                 <h3 class="uk-card-title">${picture.title}</h3>
                 <p>${picture.description}</p>
                 <p id="price">$ ${picture.price}</p>
-                <div class"uk-flex">
-                    <span class="icon-cart" id="minus-cart-${picture.id}" uk-icon="minus"></span>
-                    <span class="amount-cart-item" id="amount-cart-item-${picture.id}">0</span>
-                    <span class="icon-cart" id="add-cart-${picture.id}" uk-icon="plus"></span>
-                </div>
             </div>
       `;
     });
 }
+
+// <div class"uk-flex">
+//     <span class="icon-cart" id="minus-cart-${picture.id}" uk-icon="minus"></span>
+//     <span class="amount-cart-item" id="amount-cart-item-${picture.id}">0</span>
+//     <span class="icon-cart" id="add-cart-${picture.id}" uk-icon="plus"></span>
+// </div>
 
 function addEventsToUpdateCart() {
     dataProductos.forEach((product) => {

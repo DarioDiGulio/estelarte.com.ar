@@ -1,4 +1,4 @@
-function renderiarProductos() {
+function renderProductos() {
     const carrito = JSON.parse(localStorage.getItem('carrito'))
     const items = document.getElementById('items')
     if (carrito.length === 0) {
@@ -29,4 +29,4 @@ function renderEmptyChart(items) {
     items.innerText = 'Vacío'
 }
 
-renderiarProductos()
+renderProductos()

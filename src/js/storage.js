@@ -1,4 +1,4 @@
-sessionStorage.setItem('carrito', JSON.stringify([]))
+window.localStorage.setItem('carrito', JSON.stringify([]))
 
 const dataProductos = [
     {
@@ -96,19 +96,19 @@ function restarCantidad(producto) {
 }
 
 function eliminarProducto(index) {
-    const carrito = JSON.parse(sessionStorage.getItem('carrito'))
+    const carrito = JSON.parse(window.localStorage.getItem('carrito'))
     carrito.splice(index, 1)
     return carrito
 }
 
 function existeProductoEnCarrito(id) {
-    const carrito = JSON.parse(sessionStorage.getItem('carrito'))
+    const carrito = JSON.parse(window.localStorage.getItem('carrito'))
     const filter = carrito.filter(producto => producto.id === id)
     return filter.length !== 0
 }
 
 function agregarProducto(id) {
-    const carrito = JSON.parse(sessionStorage.getItem('carrito'))
+    const carrito = JSON.parse(window.localStorage.getItem('carrito'))
     if (carrito.length === 0 || !existeProductoEnCarrito(id)) {
         carrito.push({id, 'cantidad': 1})
     } else {
@@ -116,11 +116,11 @@ function agregarProducto(id) {
             if (producto.id === id) aumentarCantidad(producto);
         })
     }
-    sessionStorage.setItem('carrito', JSON.stringify(carrito))
+    window.localStorage.setItem('carrito', JSON.stringify(carrito))
 }
 
 function descontarProducto(id) {
-    let carrito = JSON.parse(sessionStorage.getItem('carrito'))
+    let carrito = JSON.parse(window.localStorage.getItem('carrito'))
     if (carrito.length === 0) {
         return
     } else {
@@ -129,5 +129,5 @@ function descontarProducto(id) {
             if (producto.cantidad <= 0) carrito = eliminarProducto(index);
         })
     }
-    sessionStorage.setItem('carrito', JSON.stringify(carrito))
+    window.localStorage.setItem('carrito', JSON.stringify(carrito))
 }
