@@ -11,45 +11,45 @@ jobs:
   web-test:
     runs-on: ubuntu-latest
 
-      steps:
-        - name: Checkout código fuente
-          uses: actions/checkout@v2
+    steps:
+      - name: Checkout código fuente
+        uses: actions/checkout@v2
 
-        - name: Configurar Node.js
-          uses: actions/setup-node@v2
-          with:
-            node-version: 14
+      - name: Configurar Node.js
+        uses: actions/setup-node@v2
+        with:
+          node-version: 14
 
-        - name: Instalar dependencias
-          run: npm install
+      - name: Instalar dependencias
+        run: npm install
+        working-directory: ./web
+
+      - name: Ejecutar los test
+          run: npm run test
           working-directory: ./web
-
-        - name: Ejecutar los test
-            run: npm run test
-            working-directory: ./web
 
   web-build:
     runs-on: ubuntu-latest
 
-      steps:
-        - name: Checkout código fuente
-          uses: actions/checkout@v2
+    steps:
+      - name: Checkout código fuente
+        uses: actions/checkout@v2
 
-        - name: Configurar Node.js
-          uses: actions/setup-node@v2
-          with:
-            node-version: 14
+      - name: Configurar Node.js
+        uses: actions/setup-node@v2
+        with:
+          node-version: 14
 
-        - name: Instalar dependencias
-          run: npm install
-          working-directory: ./web
+      - name: Instalar dependencias
+        run: npm install
+        working-directory: ./web
 
-        - name: Compilar la aplicación
-          run: npm run build
-          working-directory: ./web
+      - name: Compilar la aplicación
+        run: npm run build
+        working-directory: ./web
 
-        - name: Publicar artefactos
-          uses: actions/upload-artifact@v2
-          with:
-            name: build
-            path: web/build
+      - name: Publicar artefactos
+        uses: actions/upload-artifact@v2
+        with:
+          name: build
+          path: web/build
