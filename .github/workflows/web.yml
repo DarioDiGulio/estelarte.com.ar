@@ -1,4 +1,4 @@
-name: Build and Deploy React App
+name: Web pipeline
 
 on:
   push:
@@ -56,12 +56,14 @@ jobs:
         with:
           node-version: 14
 
-      - name: Restaurar caché de node_modules
+      - name: Restaurar caché de node_modules para construcción
         uses: actions/cache@v2
         with:
           path: ~/.npm
           key: ${{ runner.os }}-node_modules-${{ hashFiles('**/package-lock.json') }}
-        if: steps.build.outputs.cache-hit != 'true'
+        id: cache-node-modules-build
+        restore-keys: |
+          ${{ runner.os }}-node_modules-
 
       - name: Compilar la aplicación
         run: npm run build
@@ -72,3 +74,19 @@ jobs:
         with:
           name: build
           path: web/build
+
+#  release:
+#    needs: web-build
+#    runs-on: ubuntu-latest
+#
+#    steps:
+#      - name: Checkout código fuente
+#        uses: actions/checkout@v2
+#
+#      - name: Crear release
+#        id: create_release
+#        uses: softprops/action-gh-release@v1
+#        with:
+#          files: web/build/*
+#        env:
+#          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
