@@ -61,18 +61,18 @@ jobs:
           name: build
           path: web/build
 
-#  release:
-#    needs: web-build
-#    runs-on: ubuntu-latest
-#
-#    steps:
-#      - name: Checkout código fuente
-#        uses: actions/checkout@v2
-#
-#      - name: Crear release
-#        id: create_release
-#        uses: softprops/action-gh-release@v1
-#        with:
-#          files: web/build/*
-#        env:
-#          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+  release:
+    needs: web-build
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout código fuente
+        uses: actions/checkout@v2
+
+      - name: Crear release
+        id: create_release
+        uses: softprops/action-gh-release@v1
+        with:
+          files: web/build/*
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
