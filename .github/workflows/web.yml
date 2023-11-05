@@ -66,7 +66,7 @@ jobs:
 
       - name: Compilar la aplicación
         run: |
-          cd web
+          cd Estelarte-Web
           npm run build
         working-directory: ./web
 
