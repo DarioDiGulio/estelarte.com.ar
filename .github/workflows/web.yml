@@ -1,0 +1,35 @@
+name: Build and Deploy React App
+
+on:
+  push:
+    branches:
+      - new-web
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout código fuente
+        uses: actions/checkout@v2
+
+      - name: Configurar Node.js
+        uses: actions/setup-node@v2
+        with:
+          node-version: 14
+
+      - name: Instalar dependencias
+          run: |
+            cd web
+            npm install
+
+      - name: Compilar la aplicación
+        run: |
+          cd web
+          npm run build
+
+      - name: Publicar artefactos
+        uses: actions/upload-artifact@v2
+        with:
+          name: build
+          path: web/build
