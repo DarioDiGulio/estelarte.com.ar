@@ -76,6 +76,7 @@ jobs:
           tag_name: v1.0.0-${{ GITHUB_SHA }}
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: echo ${{ GITHUB_SHA }}
 
 #  ssh-connect:
 #    runs-on: ubuntu-latest
