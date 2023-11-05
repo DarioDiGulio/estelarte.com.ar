@@ -62,7 +62,7 @@ jobs:
           path: web/build
 
   release:
-    needs: web-build
+    needs: build
     runs-on: ubuntu-latest
 
     steps:
