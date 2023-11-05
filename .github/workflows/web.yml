@@ -69,6 +69,9 @@ jobs:
       - name: Checkout código fuente
         uses: actions/checkout@v2
 
+      - name: Prueba de resultado de version
+        run: echo v1.0.0-${{ GITHUB_SHA }}
+
       - name: Crear etiqueta y release
         uses: softprops/action-gh-release@v1
         with:
@@ -76,7 +79,6 @@ jobs:
           tag_name: v1.0.0-${{ GITHUB_SHA }}
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        run: echo ${{ GITHUB_SHA }}
 
 #  ssh-connect:
 #    runs-on: ubuntu-latest
