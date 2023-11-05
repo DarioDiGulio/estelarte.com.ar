@@ -71,7 +71,7 @@ jobs:
 
       - name: Debug tag_name
         run:
-          echo "Generated tag_name: release-${{ steps.commit_hash.outputs.hash }}"
+          echo release-${{ steps.commit_hash.outputs.hash }}
 
       - name: Crear etiqueta y release
         uses: softprops/action-gh-release@v1
