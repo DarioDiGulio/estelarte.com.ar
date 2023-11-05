@@ -69,13 +69,13 @@ jobs:
       - name: Checkout código fuente
         uses: actions/checkout@v2
 
-      - name: Prueba de resultado de version
-        run: echo v1.0.0-${{ github.sha }}
+      - name: Listar contenido del directorio de construcción
+        run: ls -R web/build
 
       - name: Crear etiqueta y release
         uses: softprops/action-gh-release@v1
         with:
-          files: ${{ steps.build.outputs.release_artifact_path }}
+          files: web/build
           tag_name: v1.0.0-${{ github.sha }}
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
