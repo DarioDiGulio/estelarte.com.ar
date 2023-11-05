@@ -73,7 +73,7 @@ jobs:
         uses: softprops/action-gh-release@v1
         with:
           files: ${{ steps.build.outputs.release_artifact_path }}
-          tag_name: v1.0.0
+          tag_name: v1.0.0-${{ GITHUB_SHA }}
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
