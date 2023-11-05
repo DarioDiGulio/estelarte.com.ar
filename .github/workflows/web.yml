@@ -20,13 +20,6 @@ jobs:
         with:
           node-version: 14
 
-      - name: Restaurar caché de node_modules
-        uses: actions/cache@v2
-        with:
-          path: ~/.npm
-          key: ${{ runner.os }}-node_modules-${{ hashFiles('**/package-lock.json') }}
-        if: steps.test.outputs.cache-hit != 'true'
-
       - name: Instalar dependencias
         run: npm install
         working-directory: ./web
