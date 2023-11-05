@@ -69,19 +69,18 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
-#  ssh-connect:
-#    runs-on: ubuntu-latest
-#    needs: release
-#    steps:
-#      - name: Checkout código fuente
-#        uses: actions/checkout@v2
-#
-#      - name: Conectar a servidor SSH
-#        uses: appleboy/ssh-action@master
-#        with:
-#          host: ${{ secrets.SSH_HOST }}
-#          username: ${{ secrets.SSH_USERNAME }}
-#          password: ${{ secrets.SSH_PASSWORD }}
-#          script: |
-#            # Comandos SSH que deseas ejecutar en el servidor remoto
-#            echo "Conexión SSH exitosa"
+  deploy:
+    runs-on: ubuntu-latest
+    needs: build-and-release
+    steps:
+      - name: Checkout código fuente
+        uses: actions/checkout@v2
+
+      - name: Conectarse por FTP y cargar archivos
+        uses: ./.github/actions/ftp-deploy
+        with:
+          server: ${{ secrets.FTP_SERVER }}
+          username: ${{ secrets.FTP_USERNAME }}
+          password: ${{ secrets.FTP_PASSWORD }}
+          localDir: web/build
+          remoteDir: /public_html/new-web
