@@ -1,0 +1,18 @@
+name: Main Web pipeline
+
+on:
+  push:
+    branches:
+      - master
+    path:
+      - .github/workflows/main-web.yml
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Disparar Webhook de Hostinger
+        run: |
+          HOSTINGER_WEBHOOK_URL="https://webhooks.hostinger.com/deploy/1f90c0afef05c01197f1caf11c2d4c63"
+          curl -X POST -d "" $HOSTINGER_WEBHOOK_URL
