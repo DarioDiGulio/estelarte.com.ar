@@ -63,10 +63,6 @@ jobs:
           key: ${{ runner.os }}-node_modules-${{ hashFiles('**/package-lock.json') }}
         if: steps.build.outputs.cache-hit != 'true'
 
-      - name: Instalar dependencias
-        run: npm install
-        working-directory: ./web
-
       - name: Compilar la aplicación
         run: npm run build
         working-directory: ./web
