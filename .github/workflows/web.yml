@@ -69,10 +69,10 @@ jobs:
       - name: Checkout código fuente
         uses: actions/checkout@v2
 
-      - name: Crear release
-        id: create_release
+      - name: Crear etiqueta y release
         uses: softprops/action-gh-release@v1
         with:
           files: web/build/*
+          tag_name: release-${{ $GITHUB_SHA }}
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
