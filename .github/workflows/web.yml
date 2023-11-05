@@ -10,6 +10,7 @@ on:
 jobs:
   web-build:
     runs-on: ubuntu-latest
+    working-directory: ./web
 
     steps:
       - name: Checkout código fuente
@@ -22,12 +23,10 @@ jobs:
 
       - name: Instalar dependencias
         run: npm install
-        working-directory: ./web
+
 
       - name: Compilar la aplicación
-        run: |
-          cd web
-          npm run build
+        run: npm run build
 
       - name: Publicar artefactos
         uses: actions/upload-artifact@v2
