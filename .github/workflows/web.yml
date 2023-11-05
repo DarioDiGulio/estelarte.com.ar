@@ -25,8 +25,8 @@ jobs:
         working-directory: ./web
 
       - name: Ejecutar los test
-          run: npm run test
-          working-directory: ./web
+        run: npm run test
+        working-directory: ./web
 
   web-build:
     runs-on: ubuntu-latest
