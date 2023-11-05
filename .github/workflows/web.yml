@@ -73,6 +73,6 @@ jobs:
         uses: softprops/action-gh-release@v1
         with:
           files: web/build/*
-          tag_name: release-${{ steps.commit_hash.outputs.hash }}-${{ steps.current_date.outputs.date }}
+          tag_name: release-${{ steps.commit_hash.outputs.hash }}
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
