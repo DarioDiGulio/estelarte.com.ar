@@ -4,9 +4,11 @@ on:
   push:
     branches:
       - new-web
+  path:
+    - .github/workflows/web.yml
 
 jobs:
-  build:
+  web-build:
     runs-on: ubuntu-latest
 
     steps:
@@ -19,9 +21,8 @@ jobs:
           node-version: 14
 
       - name: Instalar dependencias
-          run: |
-            cd web
-            npm install
+        run: npm install
+        working-directory: ./web
 
       - name: Compilar la aplicación
         run: |
