@@ -64,7 +64,7 @@ jobs:
       - name: Crear etiqueta y release
         uses: softprops/action-gh-release@v1
         with:
-          files: ${{ github.workspace }}
+          files: web/build
           tag_name: v1.0.0-${{ github.sha }}
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
