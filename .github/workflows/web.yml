@@ -78,23 +78,23 @@ jobs:
         uses: softprops/action-gh-release@v1
         with:
           files: web/build/*
-          tag_name: release-${{ steps.commit.outputs.short }}
+          tag_name: v1.0.0
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
-  ssh-connect:
-    runs-on: ubuntu-latest
+#  ssh-connect:
+#    runs-on: ubuntu-latest
 #    needs: release
-    steps:
-      - name: Checkout código fuente
-        uses: actions/checkout@v2
-
-      - name: Conectar a servidor SSH
-        uses: appleboy/ssh-action@master
-        with:
-          host: ${{ secrets.SSH_HOST }}
-          username: ${{ secrets.SSH_USERNAME }}
-          password: ${{ secrets.SSH_PASSWORD }}
-          script: |
-            # Comandos SSH que deseas ejecutar en el servidor remoto
-            echo "Conexión SSH exitosa"
+#    steps:
+#      - name: Checkout código fuente
+#        uses: actions/checkout@v2
+#
+#      - name: Conectar a servidor SSH
+#        uses: appleboy/ssh-action@master
+#        with:
+#          host: ${{ secrets.SSH_HOST }}
+#          username: ${{ secrets.SSH_USERNAME }}
+#          password: ${{ secrets.SSH_PASSWORD }}
+#          script: |
+#            # Comandos SSH que deseas ejecutar en el servidor remoto
+#            echo "Conexión SSH exitosa"
