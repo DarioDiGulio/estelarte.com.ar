@@ -75,9 +75,9 @@ jobs:
           commit: "${{ github.event.workflow_run.head_sha }}"
           prefix: "sha-"
       - name: Crear etiqueta y release
-          uses: softprops/action-gh-release@v1
-          with:
-            files: web/build/*
-            tag_name: release-${{ steps.commit.outputs.short }}
-          env:
-            GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        uses: softprops/action-gh-release@v1
+        with:
+          files: web/build/*
+          tag_name: release-${{ steps.commit.outputs.short }}
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
