@@ -69,14 +69,15 @@ jobs:
       - name: Checkout código fuente
         uses: actions/checkout@v2
 
-      - name: Debug tag_name
-        run:
-          echo release-${{ steps.commit_hash.outputs.hash }}
-
-      - name: Crear etiqueta y release
-        uses: softprops/action-gh-release@v1
+      - id: commit
+        uses: prompt/actions-commit-hash@v3
         with:
-          files: web/build/*
-          tag_name: release-${{ steps.commit_hash.outputs.hash }}
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          commit: "${{ github.event.workflow_run.head_sha }}"
+          prefix: "sha-"
+      - name: Crear etiqueta y release
+          uses: softprops/action-gh-release@v1
+          with:
+            files: web/build/*
+            tag_name: release-${{ steps.commit.outputs.short }}
+          env:
+            GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
