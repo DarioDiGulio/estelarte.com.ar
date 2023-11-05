@@ -61,6 +61,9 @@ jobs:
           name: build
           path: web/build
 
+      - name: Listar contenido del directorio de construcción
+        run: ls -R web/build
+
   release:
     needs: build
     runs-on: ubuntu-latest
