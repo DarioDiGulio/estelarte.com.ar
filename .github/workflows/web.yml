@@ -73,7 +73,7 @@ jobs:
         uses: actions/checkout@v2
 
       - name: Listar contenido del directorio de construcción
-        run: ls -R ${{ github.workspace }}/web/build
+        run: ls -R ${{ github.workspace }}
 
       - name: Crear etiqueta y release
         uses: softprops/action-gh-release@v1
