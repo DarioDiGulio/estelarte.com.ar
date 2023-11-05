@@ -4,8 +4,8 @@ on:
   push:
     branches:
       - new-web
-  path:
-    - .github/workflows/web.yml
+    path:
+      - .github/workflows/web.yml
 
 jobs:
   web-build:
