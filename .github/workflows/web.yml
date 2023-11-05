@@ -65,7 +65,9 @@ jobs:
             ${{ runner.os }}-node_modules-
 
       - name: Compilar la aplicación
-        run: npm run build
+        run: |
+          cd web
+          npm run build
         working-directory: ./web
 
       - name: Publicar artefactos
