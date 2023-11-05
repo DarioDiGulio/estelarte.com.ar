@@ -56,17 +56,9 @@ jobs:
         with:
           node-version: 14
 
-      - name: Restaurar caché de node_modules para construcción
-        uses: actions/cache@v2
-        with:
-          path: ~/.npm
-          key: ${{ runner.os }}-node_modules-${{ hashFiles('**/package-lock.json') }}
-          restore-keys: |
-            ${{ runner.os }}-node_modules-
-
       - name: Compilar la aplicación
         run: |
-          cd Estelarte-Web
+          npm install
           npm run build
         working-directory: ./web
 
