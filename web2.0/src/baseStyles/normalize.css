@@ -1,0 +1,17 @@
+@font-face {
+    font-family: 'CANDARA';
+    src: url('./fonts/CANDARA.ttf') format('truetype');
+    src: url('./fonts/CANDARA.woff') format('truetype');
+}
+
+* {
+    margin: 0;
+    font-family: "CANDARA", serif !important;
+}
+
+a,
+a:before,
+a:visited {
+    text-decoration: none;
+    color: #c2b58f !important;
+}
