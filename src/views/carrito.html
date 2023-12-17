@@ -30,6 +30,7 @@
     <link href="../../imagenes/ico.png" rel="shortcut icon" type="image/x-icon"/>
     <link href="../styles/estilosGeneral.css" rel="stylesheet"/>
     <link rel="stylesheet" href="../styles/fuente.css">
+    <link rel="stylesheet" href="../styles/carrito.css">
     <link href="../imagenes/" rel="image_src"/>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/css/uikit.min.css"/>
     <title>Taller Estelarte - Carrito</title>
@@ -73,9 +74,14 @@
             </ul>
         </div>
     </nav>
+    <a target="_"
+       href="https://api.whatsapp.com/send?phone=541158451062&amp;text=Hola! Quiero hacerte una consulta sobre el catálogo de Estelarte.">
+        <button class="hacer-pedido">Hacer pedido<span uk-icon="whatsapp"></span></button>
+    </a>
     <h2>Carrito</h2>
-    <div id="items"></div>
+    <div id="items" class="uk-flex-center" uk-grid></div>
     <script src="./../js/storage.js"></script>
+    <script src="./../js/transformer.js"></script>
     <script src="./../js/comportamientoCarrito.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/js/uikit.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/js/uikit-icons.min.js"></script>

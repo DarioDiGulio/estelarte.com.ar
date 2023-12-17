@@ -1,5 +1,3 @@
-window.localStorage.setItem('carrito', JSON.stringify([]))
-
 const dataProductos = [
     {
         id: "Despojadores de biju chico",
@@ -87,6 +85,13 @@ const dataProductos = [
     },
 ]
 
+function init() {
+    const carrito = JSON.parse(window.localStorage.getItem('carrito'))
+    if (!carrito) {
+        window.localStorage.setItem('carrito', JSON.stringify([]))
+    }
+}
+
 function aumentarCantidad(producto) {
     producto.cantidad = parseInt(producto.cantidad) + 1
 }
@@ -99,6 +104,19 @@ function eliminarProducto(index) {
     const carrito = JSON.parse(window.localStorage.getItem('carrito'))
     carrito.splice(index, 1)
     return carrito
+}
+
+function obtenerProducto(id) {
+    const carrito = JSON.parse(window.localStorage.getItem('carrito'))
+    const filter = carrito.filter(producto => producto.id === id)
+    if (filter.length === 1) return filter[0]
+    return {}
+}
+
+function cantidadDeProducto(id) {
+    const producto = obtenerProducto(id)
+    if (producto.cantidad) return producto.cantidad
+    return 0
 }
 
 function existeProductoEnCarrito(id) {
@@ -131,3 +149,5 @@ function descontarProducto(id) {
     }
     window.localStorage.setItem('carrito', JSON.stringify(carrito))
 }
+
+init()

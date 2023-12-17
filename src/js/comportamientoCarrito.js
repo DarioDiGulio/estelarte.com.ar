@@ -8,16 +8,17 @@ function renderProductos() {
     carrito.forEach(item => {
         const producto = dataProductos.find(product => product.id === item.id)
         items.innerHTML += `
-            <div class="uk-card uk-card-default uk-grid-collapse uk-child-width-1-2@s uk-margin" uk-grid>
-                <div class="uk-card-media-left uk-cover-container">
-                    <img src="${producto.src}" alt="" uk-cover>
+            <div class="uk-card uk-card-default uk-child-width-1-2@s uk-margin uk-padding-small" uk-grid>
+                <div class="uk-cover-container">
+                    <img src="${producto.src}" alt="" class="producto" uk-cover>
                     <canvas width="600" height="400"></canvas>
                 </div>
-                <div>
+                <div class="carrito-txt-container">
                     <div class="uk-card-body">
-                        <h3 class="uk-card-title">${producto.title}</h3>
-                        <p>${producto.description}</p>
-                        <p>${producto.price}</p>
+                        <h3 class="uk-card-title carrito-titulo">${producto.title}</h3>
+                        <p class="carrito-descripcion">${producto.description}</p>
+                        <p>$ ${numeroAPrecio(producto.price)}</p>
+                        <spam class="carrito-cantidad">${cantidadDeProducto(producto.id)}</spam>
                     </div>
                 </div>
             </div>

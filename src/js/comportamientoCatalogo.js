@@ -6,17 +6,21 @@ function loadPictures() {
                 <img loading="lazy" src="${picture.src}" alt="${picture.title}">
                 <h3 class="uk-card-title">${picture.title}</h3>
                 <p>${picture.description}</p>
-                <p id="price">$ ${picture.price}</p>
+                <p id="price">$ ${numeroAPrecio(picture.price)}</p>
             </div>
       `;
     });
 }
 
-// <div class"uk-flex">
-//     <span class="icon-cart" id="minus-cart-${picture.id}" uk-icon="minus"></span>
-//     <span class="amount-cart-item" id="amount-cart-item-${picture.id}">0</span>
-//     <span class="icon-cart" id="add-cart-${picture.id}" uk-icon="plus"></span>
-// </div>
+function renderCounter(picture) {
+    return `
+        <div class"uk-flex">
+            <span class="icon-cart" id="minus-cart-${picture.id}" uk-icon="minus"></span>
+            <span class="amount-cart-item" id="amount-cart-item-${picture.id}">${cantidadDeProducto(picture.id)}</span>
+            <span class="icon-cart" id="add-cart-${picture.id}" uk-icon="plus"></span>
+        </div>
+    `;
+}
 
 function addEventsToUpdateCart() {
     dataProductos.forEach((product) => {
@@ -37,6 +41,3 @@ function addEventsToUpdateCart() {
 
 loadPictures();
 addEventsToUpdateCart();
-
-const toCartButton = document.getElementById('to-cart');
-toCartButton.addEventListener('click', () => window.location.replace('carrito.html'))

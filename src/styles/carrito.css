@@ -1,0 +1,39 @@
+.carrito-txt-container > .uk-card-body {
+    padding-left: 10px !important;
+    padding-top: 10px !important;
+}
+
+.carrito-titulo {
+    margin-bottom: 5px;
+}
+
+.carrito-descripcion {
+    margin-top: 0;
+    font-size: 0.8rem;
+}
+
+.producto {
+    width: 50px;
+}
+
+.carrito-cantidad {
+    background-color: #e7e7e8;
+    color: #c2b58f;
+    padding: 3px;
+    border-radius: 50%;
+}
+
+.hacer-pedido {
+    cursor: pointer;
+    background-color: #e7e7e8;
+    color: #c2b58f !important;
+    position: fixed;
+    bottom: 25px;
+    right: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    border-radius: 10px;
+    padding-left: 15px;
+}
