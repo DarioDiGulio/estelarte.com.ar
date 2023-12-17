@@ -10,6 +10,10 @@ import jazz from "./images/figurativo/jazz.jpg";
 import marianela from "./images/figurativo/marianela.jpg";
 import patines from "./images/figurativo/patines.jpg";
 import renacer from "./images/figurativo/renacer.jpg";
+import infinito from "./images/abstract/infinito.jpg";
+import abstract1 from "./images/abstract/abstract1.png";
+import abstract2 from "./images/abstract/abstract2.png";
+import crisol from "./images/abstract/crisol.png";
 import { Category } from "./Cuadro";
 
 export const categories: Category[] = [
@@ -42,5 +46,15 @@ export const categories: Category[] = [
             {src: patines, alt: 'Patines'},
             {src: renacer, alt: 'Renacer'},
         ]
-    }
+    },
+    {
+        id: 'Abstracto',
+        title: 'Abstracto',
+        items: [
+            {src: abstract1, alt: 'abstract1'},
+            {src: abstract2, alt: 'abstract2'},
+            {src: crisol, alt: 'Crisol'},
+            {src: infinito, alt: 'Infinito'},
+        ]
+    },
 ]

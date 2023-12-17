@@ -1,3 +1,8 @@
 .dots > li {
     background-color: #c2b58f;
 }
+
+.slick-slide > div {
+    display: flex;
+    justify-content: center;
+}

@@ -2,7 +2,7 @@ import React from "react"
 import logo from "./logo.png"
 import styled from "styled-components"
 import { styles } from "../../styles/styles"
-import { Breadcrumb, Carousel } from 'antd'
+import { Card, Carousel, Image } from 'antd'
 import './styles.css'
 import { Category, Cuadro } from "./Cuadro";
 import { categories } from "./Categorias";
@@ -24,34 +24,23 @@ export const Galeria: React.FC = () => {
     </>
 
     function renderSections() {
-        return <SectionsContainer>
+        return <>
             <Title>Galería</Title>
-            <Breadcrumb
-                items={[
-                    {title: <a href="#Hiperrealismo">Hiperrealismo</a>},
-                    {title: <a href="#Escencialismo">Escencialismo</a>},
-                    {title: <a href="#ArteFigurativo">Arte Figurativo</a>},
-                    {title: <a href="#Abstracto">Abstracto</a>},
-                    {title: <a href="#Pasteles">Pasteles</a>},
-                    {title: <a href="#Año2020">Año 2020</a>},
-                    {title: <a href="#Pandemia">Pandemia</a>},
-                    {title: <a href="#ActividadesYExposiciones">Actividades y exposiciones</a>},
-                ]}
-            />
-            {categories.map(category => render(category))}
-        </SectionsContainer>
+            <SectionsContainer>
+                {categories.map(category => render(category))}
+            </SectionsContainer>
+        </>
     }
 
     function render(category: Category) {
-        return <>
-            <SubTitle id={category.id}>{category.title}</SubTitle>
+        return <Card key={category.id} hoverable title={category.title} style={{width: 300}}>
             {renderImages(category.items)}
-        </>;
+        </Card>
     }
 
     function renderImages(images: Cuadro[]) {
         return <Carousel autoplay autoplaySpeed={3500} dots={{className: 'dots'}}>
-            {images.map((image, index) => <Picture key={index}><img src={image.src} alt={image.alt}/></Picture>)}
+            {images.map(image => <Image key={image.src} width={200} src={image.src}/>)}
         </Carousel>;
     }
 }
@@ -81,12 +70,12 @@ const Title = styled.h1`
     text-align: center;
 `
 
-const SubTitle = styled.h2`
-    background-color: ${styles.colors.background};
-    text-align: center;
-`
-
 const SectionsContainer = styled.div`
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 5px;
+
     & > nav {
         position: sticky;
         display: flex;
@@ -96,11 +85,5 @@ const SectionsContainer = styled.div`
         & > ol {
             justify-content: center;
         }
-    }
-`
-
-const Picture = styled.div`
-    img {
-        margin: auto;
     }
 `
