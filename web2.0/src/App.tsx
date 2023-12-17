@@ -1,7 +1,7 @@
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom'
 import React from "react"
-import { Galeria } from "./components/galeria/Galeria"
-import { Layout } from './components/layout/Layout'
+import { Galeria } from "./pages/galeria/Galeria"
+import { Layout } from './pages/layout/Layout'
 
 export const App: React.FC = () => {
     return <Router>

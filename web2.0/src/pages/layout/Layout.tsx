@@ -1,13 +1,13 @@
 import React, { ReactNode } from "react"
 import styled from "styled-components"
-import { styles } from "../../baseStyles/styles"
+import { styles } from "../../styles/styles"
 import whatsapp from './whatsapp.png'
 import instagram from './instagram.png'
 import facebook from './facebook.png'
 import upward from './upward.png'
 import { MenuOutlined } from '@ant-design/icons'
 import { Dropdown } from 'antd'
-import { items } from "./MenuItems";
+import { items } from "./MenuItems"
 
 export const Layout: React.FC<Props> = (props) => {
     return <>
@@ -39,7 +39,7 @@ export const Layout: React.FC<Props> = (props) => {
 }
 
 const Nav = styled.div`
-    background-color: ${styles.colors.grey};
+    background-color: ${styles.colors.background};
     height: 50px;
     padding: 0 10px;
     display: flex;
@@ -52,7 +52,7 @@ const Nav = styled.div`
 `
 
 const Footer = styled.div`
-    background-color: ${styles.colors.grey};
+    background-color: ${styles.colors.background};
     padding: 0 10px;
     height: 40px;
     display: flex;

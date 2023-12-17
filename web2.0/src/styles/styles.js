@@ -1,6 +1,7 @@
 export const styles = {
     colors: {
-        grey: '#f8f8f8',
+        background: '#f8f8f8',
         text: '#c2b58f',
+        grey: '#999',
     }
 }
