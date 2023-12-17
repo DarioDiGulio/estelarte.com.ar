@@ -3,14 +3,9 @@ import logo from "./logo.png"
 import styled from "styled-components"
 import { styles } from "../../styles/styles"
 import { Breadcrumb, Carousel } from 'antd'
-import viejo from './images/hiperrealismo/viejo.png'
-import aguila from './images/hiperrealismo/aguila.png'
-import elefante from './images/hiperrealismo/elefante.png'
-import madre from './images/hiperrealismo/madre.png'
-import tango from './images/hiperrealismo/tango.png'
-import paris from './images/escencialismo/paris.jpg'
 import './styles.css'
-import { Cuadro } from "./Cuadro";
+import { Category, Cuadro } from "./Cuadro";
+import { categories } from "./Categorias";
 
 export const Galeria: React.FC = () => {
     return <>
@@ -43,32 +38,14 @@ export const Galeria: React.FC = () => {
                     {title: <a href="#ActividadesYExposiciones">Actividades y exposiciones</a>},
                 ]}
             />
-            {renderHiperrealismo()}
-            {renderEscencialismo()}
+            {categories.map(category => render(category))}
         </SectionsContainer>
     }
 
-    function renderHiperrealismo() {
-        const hiperrealismo = [
-            {src: viejo, alt: 'Don José'},
-            {src: aguila, alt: 'Águila'},
-            {src: elefante, alt: 'Tembo'},
-            {src: tango, alt: 'Tango'},
-            {src: madre, alt: 'Madre'},
-        ];
+    function render(category: Category) {
         return <>
-            <SubTitle id='Hiperrealismo'>Hiperrealismo</SubTitle>
-            {renderImages(hiperrealismo)}
-        </>;
-    }
-
-    function renderEscencialismo() {
-        const escencialismo = [
-            {src: paris, alt: 'París'},
-        ];
-        return <>
-            <SubTitle id='Escencialismo'>Escencialismo</SubTitle>
-            {renderImages(escencialismo)}
+            <SubTitle id={category.id}>{category.title}</SubTitle>
+            {renderImages(category.items)}
         </>;
     }
 
