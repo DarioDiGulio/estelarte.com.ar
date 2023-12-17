@@ -4,6 +4,7 @@ import { styles } from "../../baseStyles/styles"
 import whatsapp from './whatsapp.png'
 import instagram from './instagram.png'
 import facebook from './facebook.png'
+import upward from './upward.png'
 import { MenuOutlined } from '@ant-design/icons'
 import { Dropdown } from 'antd'
 import { items } from "./MenuItems";
@@ -11,7 +12,7 @@ import { items } from "./MenuItems";
 export const Layout: React.FC<Props> = (props) => {
     return <>
         <Nav>
-            <Dropdown menu={{items}} trigger={['click', 'hover']} >
+            <Dropdown menu={{items}} trigger={['click', 'hover']}>
                 <MenuOutlined/>
             </Dropdown>
             <Redes>
@@ -28,7 +29,12 @@ export const Layout: React.FC<Props> = (props) => {
             </Redes>
         </Nav>
         {props.children}
-        <Nav></Nav>
+        <Footer>
+            Creado por
+            <a href="https://mail.google.com/mail/?view=cm&amp;fs=1&amp;to=upwardsd@gmail.com" target="_">
+                <img loading="lazy" alt="Upward" src={upward}/>
+            </a>
+        </Footer>
     </>
 }
 
@@ -39,10 +45,21 @@ const Nav = styled.div`
     display: flex;
     justify-content: space-between;
     align-items: center;
-    
+
     & svg {
         color: ${styles.colors.text};
     }
+`
+
+const Footer = styled.div`
+    background-color: ${styles.colors.grey};
+    padding: 0 10px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    color: ${styles.colors.text};
 `
 
 const Redes = styled.div`
