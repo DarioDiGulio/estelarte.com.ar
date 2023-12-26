@@ -18,7 +18,7 @@ jobs:
       - name: Install dependencies
         run: |
           cd webapp
-          yarn ci
+          yarn install
 
       - name: Build project
         run: |
