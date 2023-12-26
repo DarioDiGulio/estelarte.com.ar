@@ -35,5 +35,5 @@ jobs:
       - name: Upload artifacts to S3
         uses: actions/upload-artifact@v3
         with:
-          name: ${{ secrets.S3_BUCKET_NAME }}
+          bucket: ${{ secrets.S3_BUCKET_NAME }}
           path: webapp/build
