@@ -42,7 +42,7 @@ jobs:
           aws-region: sa-east-1
 
       - name: Upload artifacts to S3
-        uses: actions/s3/upload@v1
+        uses: actions/upload-artifact@v3
         with:
           bucket: ${{ secrets.S3_BUCKET_NAME }}
           object: webapp/build.tar
