@@ -25,11 +25,10 @@ jobs:
           cd webapp
           yarn build
 
-      - name: Update AWS CLI
-        run: sudo apt-get update && sudo apt-get install -y awscli
-
-      - name: Deploy to S3
+      - name: Deploy Infrastructure with Terraform
         run: |
-          aws s3 sync webapp/build/ s3://estelarte-web --delete --debug --profile s3-uploader
+          terraform init
+          terraform apply -auto-approve
+        env:
           AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
           AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
