@@ -25,6 +25,10 @@ jobs:
           cd webapp
           yarn build
 
+      - name: Debug S3 bucket name
+        run: |
+          echo "S3 bucket name: ${{ secrets.S3_BUCKET_NAME }}"
+
       - name: Deploy to S3
         run: |
           aws s3 sync webapp/build/ s3://${{ secrets.S3_BUCKET_NAME }} --delete
