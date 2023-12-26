@@ -25,12 +25,11 @@ jobs:
           cd webapp
           yarn build
 
-      - name: Check AWS CLI version
-        run: aws --version
+      - name: Update AWS CLI
+        run: sudo apt-get update && sudo apt-get install -y awscli
 
       - name: Deploy to S3
         run: |
-          aws s3 sync webapp/build/ s3://estelarte-web --delete --debug
-        env:
+          aws s3 sync webapp/build/ s3://estelarte-web --delete --debug --profile s3-uploader
           AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
           AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
