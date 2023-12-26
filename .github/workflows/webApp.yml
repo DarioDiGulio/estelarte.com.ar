@@ -25,7 +25,7 @@ jobs:
           cd webapp
           yarn build
 
-      - name: Deploy Infrastructure With Terraform
+      - name: Deploy Infrastructure
         run: |
           terraform init
           terraform apply -auto-approve
