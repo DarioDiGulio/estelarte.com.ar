@@ -9,7 +9,7 @@ on:
       - .github/workflows/webApp.yml
 
 jobs:
-  build:
+  deploy:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout code
@@ -25,10 +25,6 @@ jobs:
           cd webapp
           yarn build
 
-  deploy:
-    needs: build
-    runs-on: ubuntu-latest
-    steps:
       - name: Configure AWS credentials
         uses: aws-actions/configure-aws-credentials@v1
         with:
