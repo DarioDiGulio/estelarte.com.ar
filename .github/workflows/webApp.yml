@@ -1,0 +1,40 @@
+name: Build and release React app
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+
+      - name: Set working directory
+        run: cd ./webapp
+
+      - name: Install dependencies
+        run: yarn ci
+
+      - name: Build project
+        run: yarn build
+
+  release:
+    needs: build
+    runs-on: ubuntu-latest
+    steps:
+      - name: Create release
+        uses: actions/create-release@v1
+        with:
+          tag_name: ${{ github.ref }}
+          release_name: Release ${{ github.ref }}
+          body: |
+            Build de la aplicación React
+
+      - name: Upload assets
+        uses: actions/upload-artifact@v2
+        with:
+          name: webapp
+          path: ./webapp/dist
