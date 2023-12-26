@@ -1,20 +1,20 @@
-import viejo from "./images/hiperrealismo/viejo.png";
-import aguila from "./images/hiperrealismo/aguila.png";
-import elefante from "./images/hiperrealismo/elefante.png";
-import tango from "./images/hiperrealismo/tango.png";
-import madre from "./images/hiperrealismo/madre.png";
-import paris from "./images/escencialismo/paris.jpg";
-import desnudo from "./images/figurativo/desnudo.jpeg";
-import estela from "./images/figurativo/estela.jpg";
-import jazz from "./images/figurativo/jazz.jpg";
-import marianela from "./images/figurativo/marianela.jpg";
-import patines from "./images/figurativo/patines.jpg";
-import renacer from "./images/figurativo/renacer.jpg";
-import infinito from "./images/abstract/infinito.jpg";
-import abstract1 from "./images/abstract/abstract1.png";
-import abstract2 from "./images/abstract/abstract2.png";
-import crisol from "./images/abstract/crisol.png";
-import { Category } from "./Cuadro";
+import viejo from "./images/hiperrealismo/viejo.png"
+import aguila from "./images/hiperrealismo/aguila.png"
+import elefante from "./images/hiperrealismo/elefante.png"
+import tango from "./images/hiperrealismo/tango.png"
+import madre from "./images/hiperrealismo/madre.png"
+import paris from "./images/escencialismo/paris.jpg"
+import desnudo from "./images/figurativo/desnudo.jpeg"
+import estela from "./images/figurativo/estela.jpg"
+import jazz from "./images/figurativo/jazz.jpg"
+import marianela from "./images/figurativo/marianela.jpg"
+import patines from "./images/figurativo/patines.jpg"
+import renacer from "./images/figurativo/renacer.jpg"
+import infinito from "./images/abstract/infinito.jpg"
+import abstract1 from "./images/abstract/abstract1.png"
+import abstract2 from "./images/abstract/abstract2.png"
+import crisol from "./images/abstract/crisol.png"
+import { Category } from "./Cuadro"
 
 export const categories: Category[] = [
     {
