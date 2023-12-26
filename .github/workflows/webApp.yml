@@ -15,6 +15,16 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v2
 
+      - name: Install dependencies
+        run: |
+          cd webapp
+          yarn install
+
+      - name: Build project
+        run: |
+          cd webapp
+          yarn build
+
       - name: Build project
         run: |
           cd webapp/build
