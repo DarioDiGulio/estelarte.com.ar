@@ -15,14 +15,15 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v2
 
-      - name: Set working directory
-        run: cd ./webapp
-
       - name: Install dependencies
-        run: yarn ci
+        run: |
+          cd webapp
+          yarn ci
 
       - name: Build project
-        run: yarn build
+        run: |
+          cd webapp
+          yarn build
 
   release:
     needs: build
