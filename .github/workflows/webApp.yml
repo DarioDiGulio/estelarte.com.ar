@@ -25,11 +25,6 @@ jobs:
           cd webapp
           yarn build
 
-      - name: Build project
-        run: |
-          cd webapp/build
-          tar -cf build.tar *
-
   deploy:
     needs: build
     runs-on: ubuntu-latest
@@ -45,4 +40,4 @@ jobs:
         uses: actions/upload-artifact@v3
         with:
           bucket: ${{ secrets.S3_BUCKET_NAME }}
-          object: webapp/build.tar
+          path: webapp/build
