@@ -1,0 +1,58 @@
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+
+@font-face {
+    font-family: 'CANDARA';
+    src: url('./styles/fonts/CANDARA.ttf') format('truetype');
+    src: url('./styles/fonts/CANDARA.woff') format('truetype');
+}
+
+@layer components {
+
+    /* Navbar */
+    .nav {
+        @apply h-[80px] flex justify-start items-center bg-sand100 px-[30px] gap-[40px]
+    }
+
+    .navOptions {
+        @apply flex justify-between items-center gap-[40px];
+    }
+
+    .navRrss {
+        @apply flex justify-between items-center gap-[10px];
+    }
+
+    .rrssIcon {
+        @apply h-[34px] hover:scale-125
+    }
+
+    .footer {
+        @apply h-10 flex justify-center items-center bg-grey200 font-bold text-sm text-sand200 px-[10px] gap-[10px]
+    }
+
+    /* Galery */
+    .galeryHeader {
+        @apply w-full flex flex-col justify-center items-center text-center text-2xl leading-normal mb-[20px]
+    }
+    
+    .title {
+        @apply w-full bg-sand100 text-sand200 text-center text-[28px]
+    }
+    
+    .sectionsContainer {
+        @apply w-full flex flex-wrap justify-center items-center gap-[60px] pb-[60px]
+        /* & > nav {
+            position: sticky;
+            display: flex;
+            justify-content: center;
+            padding: 0 10px;
+    
+            & > ol {
+                justify-content: center;
+            }
+        } */
+    }
+}
+
+@layer base {}
