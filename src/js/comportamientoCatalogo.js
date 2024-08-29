@@ -10,6 +10,7 @@ function loadPictures() {
             </div>
       `;
     });
+    //                ${renderCounter(picture)}
 }
 
 function renderCounter(picture) {

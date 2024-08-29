@@ -2,86 +2,93 @@ const dataProductos = [
     {
         id: "Despojadores de biju chico",
         src: "../../imagenes/catalogo/despojadorChico.jpg",
-        title: "Despojadores de biju",
-        description: "Chico",
-        price: "2000"
+        title: "Despojadores de biju - Shell",
+        description: "Hechos con resina ecológica acrílica - Tamaño Chico",
+        price: "5000"
     },
     {
         id: "Despojadores de biju grande",
         src: "../../imagenes/catalogo/despojadorGrande.jpg",
-        title: "Despojadores de biju",
-        description: "Grande",
-        price: "2500"
+        title: "Despojadores de biju - Ginkgo biloba",
+        description: "Hechos con resina ecológica acrílica - Tamaño Grande",
+        price: "7500"
     },
     {
         id: "Manito de Fátima",
         src: "../../imagenes/catalogo/portaSaumerios.jpg",
-        title: "Manito de Fátima",
-        description: "Porta saumerios",
-        price: "1500"
+        title: "Porta saumerio - Manito de Fátima",
+        description: "Hechos con resina ecológica acrílica patinados",
+        price: "4000"
     },
     {
         id: "Posa vaso",
         src: "../../imagenes/catalogo/posaVaso.jpg",
         title: "Posa vaso",
-        description: "Efecto mármol",
-        price: "2000"
+        description: "Con efecto mármol realizado en resina ecológica acrílica",
+        price: "5000"
     },
     {
         id: "Bandejas de Terrazo oval",
         src: "../../imagenes/catalogo/bandejaDeTerrazo.jpg",
-        title: "Bandejas de Terrazo oval",
-        description: "Varios colores - 18cm",
-        price: "4500"
+        title: "Bandeja oval marmolada",
+        description: "Hecha con resina ecológica acrílica - 18cm - varios colores",
+        price: "8000"
     },
     {
         id: "Bandejas de Terrazo grande",
         src: "../../imagenes/catalogo/bandejaDeTerrazoGrande.jpg",
-        title: "Bandejas de Terrazo",
-        description: "Para mesa - 19cm",
-        price: "8000"
+        title: "Bandeja redonda de Terrazo",
+        description: "Realizada en cemento con técnica de terrazo - chispas negras - 19cm",
+        price: "10000"
     },
     {
         id: "Bandejas de Terrazo con chispas",
         src: "../../imagenes/catalogo/bandejaDeTerrazoConChispas.jpg",
-        title: "Bandejas de Terrazo",
-        description: "Con chispas de terrazo - 18cm",
-        price: "4700"
+        title: "Bandeja oval de Terrazo",
+        description: "Hecha con resina ecológica acrílica con chispas de terrazo - 18cm",
+        price: "8000"
     },
     {
         id: "Porta Vela",
         src: "../../imagenes/catalogo/portaVela.jpg",
         title: "Porta Vela",
-        description: "Varios colores",
-        price: "1700"
+        description: "Hecha con resina ecológica acrílica - efecto mármol - varios colores",
+        price: "5000"
+    },
+    {
+        id: "Difusor Aromatico",
+        src: "../../imagenes/catalogo/difusorAromatico.jpeg",
+        title: "Difusor Aromático",
+        description: "Difusor de resina ecológica acrílica con palitos",
+        price: "23000"
     },
     {
         id: "SET de Baño Completo",
         src: "../../imagenes/catalogo/banioCompleto.jpg",
-        title: "SET de Baño Completo",
-        description: "Bandeja - Porta vela - Dispenser de jabón líquido",
-        price: "10000"
+        title: "SET de Baño",
+        description: "Bandeja + Porta vela + Dispenser de jabón líquido - Hecha con resina ecológica acrílica",
+        price: "30000"
     },
     {
         id: "Combo de Baño",
         src: "../../imagenes/catalogo/comboBanio.jpg",
         title: "Combo de Baño",
-        description: "Bandeja - Dispenser de jabón líquido",
-        price: "7000"
+        description: "Bandeja + Dispenser de jabón líquido - Hecha con resina ecológica acrílica",
+        price: "25000"
     },
     {
         id: "Dispenser de jabón líquido",
         src: "../../imagenes/catalogo/dispenserJabon.jpg",
         title: "Dispenser de jabón líquido",
-        description: "Terrazo",
-        price: "5000"
+        description: "Hecha con resina ecológica acrílica",
+        price: "20000"
     },
     {
         id: "Mesa pua",
         src: "../../imagenes/catalogo/mesaPua.jpg",
         title: "Mesa pua",
-        description: "70 x 50cm - Resina epoxi - Color mármol",
-        price: "29000"
+        description: "70 x 50cm - Resina epoxi - Efecto mármol",
+        price: "60000"
     },
 ]
 
