@@ -18,12 +18,24 @@ function renderProductos() {
                         <h3 class="uk-card-title carrito-titulo">${producto.title}</h3>
                         <p class="carrito-descripcion">${producto.description}</p>
                         <p>$ ${numeroAPrecio(producto.price)}</p>
-                        <spam class="carrito-cantidad">${cantidadDeProducto(producto.id)}</spam>
+                        <p class="carrito-cantidad">${cantidadDeProducto(producto.id)}</p>
                     </div>
                 </div>
             </div>
         `
     })
+    const whatsappButton = document.getElementById('hacerPedido')
+    whatsappButton.addEventListener('click', () => {
+        window.open(whatsAppMessage(carrito), '_blank');
+    })
+}
+
+function whatsAppMessage(products) {
+    let base = 'https://api.whatsapp.com/send?phone=541158451062&text=Hola! Quiero hacerte un pedido del catálogo.\n'
+    products.forEach(producto => {
+        base += `* ${producto.id} - ${producto.cantidad}\n`  
+    })
+    return encodeURI(base);
 }
 
 function renderEmptyChart(items) {

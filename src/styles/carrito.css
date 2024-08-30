@@ -18,8 +18,10 @@
 
 .carrito-cantidad {
     background-color: #e7e7e8;
-    color: #c2b58f;
-    padding: 3px;
+    color: #d1c293;
+    width: 25px;
+    height: 25px;
+    text-align: center;
     border-radius: 50%;
 }
 
