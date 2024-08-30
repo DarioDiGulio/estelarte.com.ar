@@ -1,0 +1,12 @@
+#productos {
+    padding: 20px 60px;
+}
+
+.product {
+    padding: 10px !important;
+}
+
+.description {
+    width: 70%;
+    margin: auto;
+}

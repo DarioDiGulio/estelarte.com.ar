@@ -2,15 +2,15 @@ function loadPictures() {
     dataProductos.forEach((picture) => {
         const catalogo = document.getElementById('productos');
         catalogo.innerHTML += `
-            <div class="uk-card uk-card-hover uk-card-body">
+            <div class="uk-card uk-card-hover uk-card-body product">
                 <img loading="lazy" src="${picture.src}" alt="${picture.title}">
                 <h3 class="uk-card-title">${picture.title}</h3>
-                <p>${picture.description}</p>
+                <p class="description">${picture.description}</p>
                 <p id="price">$ ${numeroAPrecio(picture.price)}</p>
+                ${renderCounter(picture)}
             </div>
       `;
     });
-    //                ${renderCounter(picture)}
 }
 
 function renderCounter(picture) {
