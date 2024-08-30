@@ -27,6 +27,8 @@ function renderProductos() {
     const whatsappButton = document.getElementById('hacerPedido')
     whatsappButton.addEventListener('click', () => {
         window.open(whatsAppMessage(carrito), '_blank');
+        reset();
+        location.pathname = 'src/views/catalogo.html';
     })
 }
 

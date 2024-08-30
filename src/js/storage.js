@@ -99,6 +99,10 @@ function init() {
     }
 }
 
+function reset() {
+    window.localStorage.setItem('carrito', JSON.stringify([]))
+}
+
 function aumentarCantidad(producto) {
     producto.cantidad = parseInt(producto.cantidad) + 1
 }
